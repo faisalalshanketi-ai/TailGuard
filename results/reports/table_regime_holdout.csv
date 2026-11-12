@@ -1,0 +1,7 @@
+regime,method,n_seeds,test_FA24_heldout_regime,event_recall_heldout_regime,train_normal_FA24_heldout
+low,TailGuard,5,3.491 ± 0.354,0.278 ± 0.024,0.872 ± 0.228
+low,GRU,5,3.491 ± 0.354,0.270 ± 0.048,0.708 ± 0.149
+mid,TailGuard,5,4.646 ± 0.000,0.200 ± 0.000,0.962 ± 0.000
+mid,GRU,5,5.111 ± 1.039,0.040 ± 0.089,1.154 ± 0.287
+high,TailGuard,5,2.542 ± 0.000,0.208 ± 0.000,0.280 ± 0.000
+high,GRU,5,2.542 ± 0.000,0.208 ± 0.000,0.280 ± 0.000

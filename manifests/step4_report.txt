@@ -1,0 +1,16 @@
+TailGuard Step 4 constraint registry (fitting data only)
+valve_FCV01            RETAINED  R2=0.999  regime q95 ratios low:0.99, mid:1.00, high:1.01  
+valve_FCV02            RETAINED  R2=0.975  regime q95 ratios low:1.02, mid:1.00, high:0.98  
+valve_FCV03            RETAINED  R2=0.986  regime q95 ratios low:1.00, mid:1.00, high:1.01  
+valve_LCV01            RETAINED  R2=0.982  regime q95 ratios low:1.01, mid:1.00, high:0.99  
+valve_PCV01            RETAINED  R2=0.977  regime q95 ratios low:0.99, mid:1.00, high:1.01  
+valve_PCV02            REJECTED  R2=0.075  regime q95 ratios low:1.00, mid:0.98, high:1.00  not identifiable: fitting R2 0.07 < 0.5
+flowconv_FT01          RETAINED  R2=0.989  regime q95 ratios low:1.00, mid:1.00, high:1.01  
+flowconv_FT02          RETAINED  R2=0.999  regime q95 ratios low:1.00, mid:1.00, high:1.01  
+flowconv_FT03          RETAINED  R2=0.998  regime q95 ratios low:0.97, mid:1.01, high:1.03  
+mass_P1_return_tank    RETAINED  R2=0.968  regime q95 ratios low:1.01, mid:0.98, high:1.02  
+mass_P3_upper_tank     REJECTED  R2=0.614  regime q95 ratios low:1.01, mid:0.99, high:1.00  sign contradicts documented physics
+power_P4_steam         RETAINED  R2=0.973  regime q95 ratios low:0.98, mid:1.01, high:0.99  
+power_P4_hydro         REJECTED  R2=0.000  regime q95 ratios low:1.00, mid:1.00, high:1.00  not identifiable: fitting R2 0.00 < 0.5
+speed_P2_turbine       RETAINED  R2=0.936  regime q95 ratios low:1.36, mid:0.86, high:0.79  
+Retained 11 of 14 relations.

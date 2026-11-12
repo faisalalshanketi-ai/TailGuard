@@ -1,0 +1,37 @@
+protocol,method,F1,AP,FPR,precision,recall
+"[14] p95-validation threshold, Test 1",best published (GNN),0.554,0.572,0.030,,
+"[14] p95-validation threshold, Test 1",iforest,0.227 ± 0.000,0.176 ± 0.000,0.053 ± 0.000,0.212 ± 0.000,0.244 ± 0.000
+"[14] p95-validation threshold, Test 1",pca,0.633 ± 0.000,0.749 ± 0.000,0.043 ± 0.000,0.522 ± 0.000,0.806 ± 0.000
+"[14] p95-validation threshold, Test 1",persistence,0.133 ± 0.000,0.411 ± 0.000,0.742 ± 0.000,0.071 ± 0.000,0.974 ± 0.000
+"[14] p95-validation threshold, Test 1",ridge,0.650 ± 0.000,0.830 ± 0.000,0.059 ± 0.000,0.490 ± 0.000,0.964 ± 0.000
+"[14] p95-validation threshold, Test 1",TailGuard,0.691 ± 0.011,0.795 ± 0.007,0.045 ± 0.003,0.550 ± 0.014,0.929 ± 0.003
+"[14] p95-validation threshold, Test 1",A4_beta0 (temporal score only),0.691 ± 0.012,0.794 ± 0.008,0.044 ± 0.003,0.552 ± 0.016,0.923 ± 0.005
+"[14] p95-validation threshold, Test 1",Residual-only (beta=1),0.351 ± 0.000,0.378 ± 0.000,0.090 ± 0.000,0.260 ± 0.000,0.542 ± 0.000
+"[14] p95-validation threshold, Test 1",GRU (pooled ERM),0.738 ± 0.021,0.778 ± 0.009,0.028 ± 0.004,0.643 ± 0.029,0.866 ± 0.004
+"[14] p95-validation threshold, Test 1",A1_no_physics,0.603 ± 0.028,0.753 ± 0.013,0.058 ± 0.009,0.466 ± 0.038,0.859 ± 0.016
+"[14] p95-validation threshold, Test 1",A2_no_invariance,0.707 ± 0.013,0.791 ± 0.004,0.041 ± 0.003,0.572 ± 0.017,0.925 ± 0.006
+"[14] p95-validation threshold, Test 1",A3_pooled_no_inv,0.715 ± 0.005,0.792 ± 0.008,0.039 ± 0.001,0.584 ± 0.007,0.922 ± 0.006
+"[14] p95-validation threshold, Test 1",A10_whole_forecast_VREx,0.704 ± 0.021,0.790 ± 0.003,0.041 ± 0.005,0.569 ± 0.027,0.924 ± 0.003
+"[14] p95-validation threshold, Test 1",A11_day_environments,0.684 ± 0.021,0.795 ± 0.002,0.046 ± 0.005,0.541 ± 0.028,0.929 ± 0.005
+"[14] p95-validation threshold, Test 1",GDN,0.482 ± 0.139,0.516 ± 0.087,0.074 ± 0.063,0.403 ± 0.156,0.650 ± 0.078
+"[14] p95-validation threshold, Test 1",TranAD,0.400 ± 0.113,0.455 ± 0.081,0.095 ± 0.070,0.329 ± 0.134,0.597 ± 0.134
+"[14] p95-validation threshold, Test 1",USAD,0.121 ± 0.010,0.112 ± 0.033,0.679 ± 0.023,0.065 ± 0.006,0.808 ± 0.052
+"[14]/[15] fixed 5% FPR on test-normal, Test 1",[14] GNN+BiLSTM,0.530,,,,
+"[14]/[15] fixed 5% FPR on test-normal, Test 1",[15] GNN+BiLSTM,0.498,,,,
+"[14]/[15] fixed 5% FPR on test-normal, Test 1",[15] USAD,0.419,,,,
+"[14]/[15] fixed 5% FPR on test-normal, Test 1",iforest,0.225 ± 0.000,,,0.215 ± 0.000,0.234 ± 0.000
+"[14]/[15] fixed 5% FPR on test-normal, Test 1",pca,0.613 ± 0.000,,,0.490 ± 0.000,0.819 ± 0.000
+"[14]/[15] fixed 5% FPR on test-normal, Test 1",persistence,0.466 ± 0.000,,,0.399 ± 0.000,0.559 ± 0.000
+"[14]/[15] fixed 5% FPR on test-normal, Test 1",ridge,0.683 ± 0.000,,,0.530 ± 0.000,0.962 ± 0.000
+"[14]/[15] fixed 5% FPR on test-normal, Test 1",TailGuard,0.670 ± 0.002,,,0.523 ± 0.001,0.933 ± 0.004
+"[14]/[15] fixed 5% FPR on test-normal, Test 1",A4_beta0 (temporal score only),0.668 ± 0.003,,,0.522 ± 0.001,0.928 ± 0.007
+"[14]/[15] fixed 5% FPR on test-normal, Test 1",Residual-only (beta=1),0.423 ± 0.000,,,0.368 ± 0.000,0.496 ± 0.000
+"[14]/[15] fixed 5% FPR on test-normal, Test 1",GRU (pooled ERM),0.647 ± 0.007,,,0.510 ± 0.004,0.886 ± 0.013
+"[14]/[15] fixed 5% FPR on test-normal, Test 1",A1_no_physics,0.631 ± 0.007,,,0.501 ± 0.004,0.854 ± 0.015
+"[14]/[15] fixed 5% FPR on test-normal, Test 1",A2_no_invariance,0.668 ± 0.002,,,0.521 ± 0.001,0.930 ± 0.005
+"[14]/[15] fixed 5% FPR on test-normal, Test 1",A3_pooled_no_inv,0.668 ± 0.003,,,0.522 ± 0.002,0.929 ± 0.006
+"[14]/[15] fixed 5% FPR on test-normal, Test 1",A10_whole_forecast_VREx,0.668 ± 0.002,,,0.521 ± 0.001,0.928 ± 0.004
+"[14]/[15] fixed 5% FPR on test-normal, Test 1",A11_day_environments,0.670 ± 0.003,,,0.523 ± 0.002,0.931 ± 0.004
+"[14]/[15] fixed 5% FPR on test-normal, Test 1",GDN,0.498 ± 0.059,,,0.418 ± 0.038,0.618 ± 0.099
+"[14]/[15] fixed 5% FPR on test-normal, Test 1",TranAD,0.446 ± 0.064,,,0.383 ± 0.042,0.536 ± 0.102
+"[14]/[15] fixed 5% FPR on test-normal, Test 1",USAD,0.105 ± 0.074,,,0.105 ± 0.072,0.105 ± 0.077

@@ -1,0 +1,43 @@
+model,fault_set,score,detected,events,bias,freeze,ramp
+TailGuard,seed 17 (selection set),prespecified,15,36,7,1,7
+TailGuard,seed 17 (selection set),max,21,36,10,2,9
+TailGuard,seed 29,prespecified,13,36,8,0,5
+TailGuard,seed 29,max,19,36,11,0,8
+TailGuard,seed 43,prespecified,10,36,5,0,5
+TailGuard,seed 43,max,15,36,7,2,6
+TailGuard,seed 71,prespecified,15,36,8,2,5
+TailGuard,seed 71,max,21,36,10,3,8
+TailGuard,seed 101,prespecified,9,36,5,0,4
+TailGuard,seed 101,max,13,36,7,1,5
+TailGuard,"seed 29, half magnitude",prespecified,7,36,6,0,1
+TailGuard,"seed 29, half magnitude",max,12,36,8,0,4
+TailGuard,"seed 29, double magnitude",prespecified,19,36,11,0,8
+TailGuard,"seed 29, double magnitude",max,24,36,12,0,12
+Matched GRU,seed 17 (selection set),prespecified,11,36,4,0,7
+Matched GRU,seed 17 (selection set),max,12,36,3,1,8
+Matched GRU,seed 29,prespecified,14,36,11,0,3
+Matched GRU,seed 29,max,14,36,11,0,3
+Matched GRU,seed 43,prespecified,12,36,7,0,5
+Matched GRU,seed 43,max,12,36,7,0,5
+Matched GRU,seed 71,prespecified,11,36,8,0,3
+Matched GRU,seed 71,max,13,36,8,0,5
+Matched GRU,seed 101,prespecified,9,36,4,1,4
+Matched GRU,seed 101,max,9,36,4,1,4
+Matched GRU,"seed 29, half magnitude",prespecified,6,36,4,0,2
+Matched GRU,"seed 29, half magnitude",max,7,36,5,0,2
+Matched GRU,"seed 29, double magnitude",prespecified,18,36,12,0,6
+Matched GRU,"seed 29, double magnitude",max,20,36,12,0,8
+A1 (no constraint term),seed 17 (selection set),prespecified,6,36,4,0,2
+A1 (no constraint term),seed 17 (selection set),max,12,36,6,0,6
+A1 (no constraint term),seed 29,prespecified,7,36,4,0,3
+A1 (no constraint term),seed 29,max,13,36,9,0,4
+A1 (no constraint term),seed 43,prespecified,6,36,4,0,2
+A1 (no constraint term),seed 43,max,10,36,6,0,4
+A1 (no constraint term),seed 71,prespecified,3,36,3,0,0
+A1 (no constraint term),seed 71,max,10,36,9,0,1
+A1 (no constraint term),seed 101,prespecified,5,36,2,0,3
+A1 (no constraint term),seed 101,max,7,36,3,0,4
+A1 (no constraint term),"seed 29, half magnitude",prespecified,1,36,0,0,1
+A1 (no constraint term),"seed 29, half magnitude",max,5,36,4,0,1
+A1 (no constraint term),"seed 29, double magnitude",prespecified,17,36,12,0,5
+A1 (no constraint term),"seed 29, double magnitude",max,20,36,12,0,8
