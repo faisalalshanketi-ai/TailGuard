@@ -1,0 +1,6 @@
+2026-10-22 22:28:26 test labels unsealed by step6_evaluate.py
+2026-10-22 22:29:02 note: the first unsealing run stopped with an IndexError in the published-protocol block (Test-1 file name specific to HAI 23.05) before writing any result; the block was changed to use all test files and the same evaluation was re-run; no setting was changed
+2026-10-22 22:29:03 test labels unsealed by step6_evaluate.py
+2026-10-22 22:29:53 test labels read by step6_evaluate_max.py (post-hoc max-tail-surprise extension, frozen variant)
+2026-10-22 22:46:17 test labels read by score_ablation.py (descriptive score ablation)
+2026-10-22 22:54:16 test labels read by ridge_v.py (descriptive, post-hoc ridge + constraint stream)

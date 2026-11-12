@@ -1,0 +1,3 @@
+detector,ms_per_sample,parameters,model_kB,reference_MB,cpu,threads
+TailGuard (GRU forecast + 11 constraints + tail surprise + fusion),4.383186054999896,56183,219.5,9.0,x86_64,1
+Ridge AR (lags 1-60 s + tail surprise),1.7991715923335505,25795,100.8,7.5,x86_64,1

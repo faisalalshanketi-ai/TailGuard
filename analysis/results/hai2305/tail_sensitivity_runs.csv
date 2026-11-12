@@ -1,0 +1,51 @@
+model,tail_fit,score,event_recall,FA24,F1_5pctFPR_test1
+search__W30_inv1.0_phys0.1_phys_regime_bal_s17,"paper: q=0.99, floor 1e-3","prespecified (top-3, beta 0.5)",0.38461538461538464,1.5837170425550635,0.6568615534216604
+search__W30_inv1.0_phys0.1_phys_regime_bal_s17,"paper: q=0.99, floor 1e-3",max tail surprise,0.46153846153846156,1.9004604510660763,0.6681143684401013
+search__W30_inv1.0_phys0.1_phys_regime_bal_s17,q=0.98,"prespecified (top-3, beta 0.5)",0.34615384615384615,1.2669736340440507,0.6594686400582312
+search__W30_inv1.0_phys0.1_phys_regime_bal_s17,q=0.98,max tail surprise,0.46153846153846156,1.9004604510660763,0.6695557963163596
+search__W30_inv1.0_phys0.1_phys_regime_bal_s17,q=0.995,"prespecified (top-3, beta 0.5)",0.40384615384615385,1.5837170425550635,0.6533447057390033
+search__W30_inv1.0_phys0.1_phys_regime_bal_s17,q=0.995,max tail surprise,0.46153846153846156,1.9004604510660763,0.6648929737574072
+search__W30_inv1.0_phys0.1_phys_regime_bal_s17,floor 1e-2,"prespecified (top-3, beta 0.5)",0.38461538461538464,1.5837170425550635,0.6568615534216604
+search__W30_inv1.0_phys0.1_phys_regime_bal_s17,floor 1e-2,max tail surprise,0.46153846153846156,1.9004604510660763,0.6678722121760097
+search__W30_inv1.0_phys0.1_phys_regime_bal_s17,no exponential tail (ECDF only),"prespecified (top-3, beta 0.5)",0.09615384615384616,0.9502302255330382,0.6444253648963572
+search__W30_inv1.0_phys0.1_phys_regime_bal_s17,no exponential tail (ECDF only),max tail surprise,0.38461538461538464,0.9502302255330382,0.6548198636806232
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s101,"paper: q=0.99, floor 1e-3","prespecified (top-3, beta 0.5)",0.36538461538461536,1.2669736340440507,0.6546561168594035
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s101,"paper: q=0.99, floor 1e-3",max tail surprise,0.4423076923076923,1.5837170425550635,0.6693188667872212
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s101,q=0.98,"prespecified (top-3, beta 0.5)",0.36538461538461536,1.2669736340440507,0.6569449507838133
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s101,q=0.98,max tail surprise,0.40384615384615385,1.2669736340440507,0.6698760380310507
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s101,q=0.995,"prespecified (top-3, beta 0.5)",0.36538461538461536,1.5837170425550635,0.6528522671867382
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s101,q=0.995,max tail surprise,0.4423076923076923,1.5837170425550635,0.6668275030156815
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s101,floor 1e-2,"prespecified (top-3, beta 0.5)",0.34615384615384615,1.5837170425550635,0.6544923301680059
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s101,floor 1e-2,max tail surprise,0.4230769230769231,1.2669736340440507,0.6687545169838593
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s101,no exponential tail (ECDF only),"prespecified (top-3, beta 0.5)",0.09615384615384616,0.6334868170220254,0.6440927493559072
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s101,no exponential tail (ECDF only),max tail surprise,0.36538461538461536,1.2669736340440507,0.6567817209528439
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s29,"paper: q=0.99, floor 1e-3","prespecified (top-3, beta 0.5)",0.34615384615384615,1.2669736340440507,0.6579234972677596
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s29,"paper: q=0.99, floor 1e-3",max tail surprise,0.38461538461538464,1.2669736340440507,0.6730769230769231
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s29,q=0.98,"prespecified (top-3, beta 0.5)",0.36538461538461536,1.2669736340440507,0.6603636363636364
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s29,q=0.98,max tail surprise,0.4230769230769231,1.5837170425550635,0.6764247150569886
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s29,q=0.995,"prespecified (top-3, beta 0.5)",0.34615384615384615,1.2669736340440507,0.6535087719298246
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s29,q=0.995,max tail surprise,0.36538461538461536,1.2669736340440507,0.6683550410033767
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s29,floor 1e-2,"prespecified (top-3, beta 0.5)",0.36538461538461536,1.2669736340440507,0.6579234972677596
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s29,floor 1e-2,max tail surprise,0.38461538461538464,1.2669736340440507,0.6729129129129129
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s29,no exponential tail (ECDF only),"prespecified (top-3, beta 0.5)",0.09615384615384616,0.9502302255330382,0.6430939226519337
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s29,no exponential tail (ECDF only),max tail surprise,0.40384615384615385,0.9502302255330382,0.6549835706462213
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s43,"paper: q=0.99, floor 1e-3","prespecified (top-3, beta 0.5)",0.34615384615384615,1.2669736340440507,0.657271291459118
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s43,"paper: q=0.99, floor 1e-3",max tail surprise,0.34615384615384615,1.5837170425550635,0.6681133212778783
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s43,q=0.98,"prespecified (top-3, beta 0.5)",0.34615384615384615,1.2669736340440507,0.6597138006306088
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s43,q=0.98,max tail surprise,0.4230769230769231,1.2669736340440507,0.6703601108033241
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s43,q=0.995,"prespecified (top-3, beta 0.5)",0.28846153846153844,1.5837170425550635,0.6551472377707471
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s43,q=0.995,max tail surprise,0.3076923076923077,1.9004604510660763,0.6661837498490885
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s43,floor 1e-2,"prespecified (top-3, beta 0.5)",0.28846153846153844,1.2669736340440507,0.657271291459118
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s43,floor 1e-2,max tail surprise,0.3269230769230769,1.5837170425550635,0.6682744483299168
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s43,no exponential tail (ECDF only),"prespecified (top-3, beta 0.5)",0.09615384615384616,0.9502302255330382,0.6485693323550991
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s43,no exponential tail (ECDF only),max tail surprise,0.4423076923076923,3.167434085110127,0.6566184514403792
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s71,"paper: q=0.99, floor 1e-3","prespecified (top-3, beta 0.5)",0.3269230769230769,1.2669736340440507,0.6584122359796067
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s71,"paper: q=0.99, floor 1e-3",max tail surprise,0.40384615384615385,1.2669736340440507,0.6705967276227142
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s71,q=0.98,"prespecified (top-3, beta 0.5)",0.23076923076923078,1.2669736340440507,0.661012842258299
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s71,q=0.98,max tail surprise,0.40384615384615385,1.2669736340440507,0.6737171013099387
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s71,q=0.995,"prespecified (top-3, beta 0.5)",0.3076923076923077,1.5837170425550635,0.6562917933130699
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s71,q=0.995,max tail surprise,0.36538461538461536,1.5837170425550635,0.6681933228877908
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s71,floor 1e-2,"prespecified (top-3, beta 0.5)",0.3076923076923077,1.2669736340440507,0.6582493626320263
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s71,floor 1e-2,max tail surprise,0.40384615384615385,1.2669736340440507,0.6712394705174488
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s71,no exponential tail (ECDF only),"prespecified (top-3, beta 0.5)",0.11538461538461539,0.3167434085110127,0.647908000978713
+tailguard__W30_inv1.0_phys0.1_phys_regime_bal_s71,no exponential tail (ECDF only),max tail surprise,0.36538461538461536,1.5837170425550635,0.6593886462882096
