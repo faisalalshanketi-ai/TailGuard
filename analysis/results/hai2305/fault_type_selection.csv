@@ -1,0 +1,5 @@
+selection on,selected,held-out type,held-out detected,rank on held-out type,best on held-out type,uses constraint term
+bias + freeze + ramp,search__W30_inv1.0_phys0.1_phys_regime_bal_s17,,,,,True
+freeze + ramp,search__W30_inv1.0_phys0.1_phys_regime_bal_s17,bias,7/12,4 of 27,8/12,True
+bias + ramp,search__W30_inv1.0_phys0.1_phys_regime_bal_s17,freeze,1/12,1 of 27,1/12,True
+bias + freeze,search__W30_inv1.0_phys1.0_phys_regime_bal_s17,ramp,5/12,10 of 27,7/12,True

@@ -1,0 +1,13 @@
+,,event_recall,event_recall,FA24,FA24,F1_5pctFPR_test1,F1_5pctFPR_test1
+,,mean,std,mean,std,mean,std
+score,tail_fit,,,,,,
+max tail surprise,floor 1e-2,0.4,0.05,1.457,0.283,0.67,0.002
+max tail surprise,no exponential tail (ECDF only),0.392,0.032,1.584,0.923,0.657,0.002
+max tail surprise,"paper: q=0.99, floor 1e-3",0.408,0.046,1.52,0.265,0.67,0.002
+max tail surprise,q=0.98,0.423,0.024,1.457,0.283,0.672,0.003
+max tail surprise,q=0.995,0.388,0.063,1.647,0.265,0.667,0.001
+"prespecified (top-3, beta 0.5)",floor 1e-2,0.338,0.04,1.394,0.173,0.657,0.001
+"prespecified (top-3, beta 0.5)",no exponential tail (ECDF only),0.1,0.009,0.76,0.283,0.646,0.002
+"prespecified (top-3, beta 0.5)","paper: q=0.99, floor 1e-3",0.354,0.022,1.33,0.142,0.657,0.001
+"prespecified (top-3, beta 0.5)",q=0.98,0.331,0.057,1.267,0.0,0.66,0.002
+"prespecified (top-3, beta 0.5)",q=0.995,0.342,0.046,1.52,0.142,0.654,0.001

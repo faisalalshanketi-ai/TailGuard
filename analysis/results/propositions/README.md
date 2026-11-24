@@ -1,0 +1,9 @@
+# Propositions 4 and 5: evaluation and simulation
+
+- `prop5_eval.py <root> <prefix> <runs|runs_max> <out.csv> [block_hours]`: block-maximum threshold of Proposition 5 (k = 2) against the monotone-closure threshold on the frozen scores; recomputes every closure threshold and checks it against the saved one (difference 0.0 on all runs). Outputs `p5_*` (1 h blocks) and `p5h_*` (0.5 h blocks) for HAI 23.05 and HAI 22.04, prespecified and max scores.
+- `sim.py <scripts_dir> <out.csv>`: AR(1) simulation of Appendix B (66 channels, lag-1 correlation 0, 0.5, 0.9, 0.99, 0.999; three repetitions). `sim_blocks.csv`: 20 further repetitions at 0.99 (repetitions 3-22) for the block guarantee.
+- `figB1.py`: Figure B1 from `sim.csv`.
+- Model-implied threshold of Proposition 4: tau_A = log10(e * 86400 * m), m = 66 (HAI 23.05) or 67 (HAI 22.04).
+- `sim_ext.py <scripts_dir> <out.csv> <family> <first rep> <last rep + 1> [rho ...]`: the same simulation with Student-t (3 d.f.; `sim_t3.csv`), GARCH(1,1) with alpha 0.10 and beta 0.85 (`sim_garch.csv`) and GARCH(1,1) with Student-t 5 d.f. innovations (`sim_garcht.csv`), three repetitions at each correlation (Table B2). `simb_t3.csv`, `simb_garch.csv`: 20 further repetitions at 0.99 (repetitions 3-22) for the block share.
+- `split_cal.py --root <root> --out <dir>`: `split_selection.csv` (the 27 search candidates with closure thresholds from the full calibration record and from its first half, and the development faults detected with each) and `split_prop5.csv` (block-maximum level computed on the second half of the calibration record, evaluated on the normal test blocks; 1 h and 0.5 h blocks). Section 4.7.
+- `tail_fit_gpd.py --root <root> --out <csv>`: `tail_fit_gpd.csv`, generalized Pareto shape and mean-excess ratios of the excesses over the 99th percentile per channel (seed-17 TailGuard forecast errors and the constraint residuals; reference = validation, check = calibration). Section 4.3.

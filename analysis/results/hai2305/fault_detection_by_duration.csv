@@ -1,0 +1,9 @@
+kind,duration_s,sum,count
+bias,60,3,4
+bias,180,2,5
+bias,600,2,3
+freeze,60,0,1
+freeze,180,1,8
+freeze,600,0,3
+ramp,60,4,4
+ramp,180,3,8
