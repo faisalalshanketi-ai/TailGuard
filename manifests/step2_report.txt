@@ -1,0 +1,41 @@
+TailGuard Step 2 report | HAI 23.05
+Training rows 896,400 (249.0 h); cut rows 537,840 / 717,120
+Cut timestamps: fit|val at 2022-08-16 06:24:01, val|cal at 2022-08-22 22:12:01
+  fit: 149.4 h  2022-08-04 18:00:01 -> 2022-08-16 06:24:00  eligible targets 537,600
+  val: 49.8 h  2022-08-16 06:24:01 -> 2022-08-22 22:12:00  eligible targets 178,920
+  cal: 49.8 h  2022-08-22 22:12:01 -> 2022-08-25 00:00:00  eligible targets 179,160
+Feature roles (from fitting data): 55 continuous targets, 5 set-point context, 6 discrete actuators, 20 excluded constant
+  context: ['P1_PP04SP', 'P2_AutoSD', 'P2_ManualSD', 'P4_HT_PS', 'P4_ST_PS']
+  discrete: ['P1_PP04D', 'P2_ATSW_Lamp', 'P2_AutoGO', 'P2_MASW', 'P2_MASW_Lamp', 'P2_ManualGO']
+  excluded: ['P1_PIT01_HH', 'P1_PP01AD', 'P1_PP01AR', 'P1_PP01BD', 'P1_PP01BR', 'P1_PP02D', 'P1_PP02R', 'P1_SOL01D', 'P1_SOL03D', 'P1_STSP', 'P2_Emerg', 'P2_OnOff', 'P2_RTR', 'P2_TripEx', 'P2_VTR01', 'P2_VTR02', 'P2_VTR03', 'P2_VTR04', 'P3_LH01', 'P3_LL01']
+Environments (eligible targets):
+  fit  hai-train1 2022-08-04  21,479
+  fit  hai-train1 2022-08-05  86,400
+  fit  hai-train1 2022-08-06  86,400
+  fit  hai-train1 2022-08-07  86,401
+  fit  hai-train2 2022-08-13  61,079
+  fit  hai-train2 2022-08-14  86,400
+  fit  hai-train2 2022-08-15  86,400
+  fit  hai-train2 2022-08-16  23,041
+  val  hai-train2 2022-08-16  34,440
+  val  hai-train3 2022-08-19  28,679
+  val  hai-train3 2022-08-20  86,400
+  val  hai-train3 2022-08-21  10,801
+  val  hai-train4 2022-08-22  18,600
+  cal  hai-train4 2022-08-22  6,359
+  cal  hai-train4 2022-08-23  86,400
+  cal  hai-train4 2022-08-24  86,401
+Regime hours by partition (low/mid/high):
+regime        0     1     2
+partition                  
+fit        46.9  71.8  30.7
+val        25.1   0.0  24.7
+cal        16.3   3.1  30.4
+Regime hours by test file:
+regime        0    1     2
+file_id                   
+hai-test1   0.0  4.5  10.5
+hai-test2  38.2  6.2  19.7
+Attack events: 52  by onset regime: {'high': 24, 'low': 23, 'mid': 5}
+Attack seconds lost to the first-120 eligibility rule: 0
+Done in 48 s

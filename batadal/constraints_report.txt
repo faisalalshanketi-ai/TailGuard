@@ -1,0 +1,11 @@
+mass_T1      REJECTED  R2=0.714 q95 ratios band1:0.99, band2:0.99, band3:1.01  sign contradicts documented physics
+mass_T2      RETAINED  R2=0.653 q95 ratios band1:1.00, band2:0.99, band3:1.01  
+mass_T3      RETAINED  R2=0.807 q95 ratios band1:1.13, band2:0.89, band3:1.02  
+mass_T4      REJECTED  R2=0.357 q95 ratios band1:1.00, band2:0.97, band3:1.04  not identifiable: fitting R2 0.36 < 0.5
+mass_T5      RETAINED  R2=0.685 q95 ratios band1:0.97, band2:1.01, band3:1.00  
+mass_T7      REJECTED  R2=0.417 q95 ratios band1:0.97, band2:1.03, band3:1.00  not identifiable: fitting R2 0.42 < 0.5
+head_PU2     RETAINED  R2=0.995 q95 ratios band1:0.98, band2:1.00, band3:1.01  
+head_PU6     REJECTED  R2=-0.136 q95 ratios band1:1.00, band2:1.00, band3:0.99  not identifiable: fitting R2 -0.14 < 0.5
+head_PU10    RETAINED  R2=0.737 q95 ratios band1:1.02, band2:1.00, band3:0.98  
+head_V2      REJECTED  R2=0.359 q95 ratios band1:1.00, band2:0.99, band3:1.01  not identifiable: fitting R2 0.36 < 0.5
+Retained 5 of 10 relations.

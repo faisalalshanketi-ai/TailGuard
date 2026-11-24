@@ -1,0 +1,478 @@
+{
+  "screen_ratio": 2.0,
+  "min_targets_per_regime": 1000,
+  "relations": [
+    {
+      "id": "valve_FCV01",
+      "class": "actuator tracking",
+      "evidence": "manual: P1 control loops; *_D position command, *_Z current position (%)",
+      "target": [
+        "P1_FCV01Z",
+        "level"
+      ],
+      "terms": [
+        [
+          "P1_FCV01D",
+          "mean3",
+          "id"
+        ]
+      ],
+      "window_s": 3,
+      "coef": [
+        1.009030746188257
+      ],
+      "intercept": -0.4086403664841214,
+      "scale_a": 0.607204010908883,
+      "r2_fit": 0.9992108922171988,
+      "q95_ratio_by_regime": {
+        "low": 0.9947476582142049,
+        "mid": 1.0008398497726312,
+        "high": 1.007592411613227
+      },
+      "worst_ratio": 1.007592411613227,
+      "status": "retained",
+      "reason": ""
+    },
+    {
+      "id": "valve_FCV02",
+      "class": "actuator tracking",
+      "evidence": "manual: P1 control loops; *_D position command, *_Z current position (%)",
+      "target": [
+        "P1_FCV02Z",
+        "level"
+      ],
+      "terms": [
+        [
+          "P1_FCV02D",
+          "mean30",
+          "id"
+        ]
+      ],
+      "window_s": 30,
+      "coef": [
+        0.9986615762479725
+      ],
+      "intercept": -2.5284515165198798,
+      "scale_a": 0.03734006280023915,
+      "r2_fit": 0.9747841618421129,
+      "q95_ratio_by_regime": {
+        "low": 1.0220275729097845,
+        "mid": 0.9951863123073728,
+        "high": 0.9766237866232856
+      },
+      "worst_ratio": 1.0220275729097845,
+      "status": "retained",
+      "reason": ""
+    },
+    {
+      "id": "valve_FCV03",
+      "class": "actuator tracking",
+      "evidence": "manual: P1 control loops; *_D position command, *_Z current position (%)",
+      "target": [
+        "P1_FCV03Z",
+        "level"
+      ],
+      "terms": [
+        [
+          "P1_FCV03D",
+          "mean30",
+          "id"
+        ]
+      ],
+      "window_s": 30,
+      "coef": [
+        1.02190284680274
+      ],
+      "intercept": -0.5022759358481039,
+      "scale_a": 0.4791575845227168,
+      "r2_fit": 0.9858821355422155,
+      "q95_ratio_by_regime": {
+        "low": 0.9953138186319124,
+        "mid": 0.9993270777836044,
+        "high": 1.0112255733755269
+      },
+      "worst_ratio": 1.0112255733755269,
+      "status": "retained",
+      "reason": ""
+    },
+    {
+      "id": "valve_LCV01",
+      "class": "actuator tracking",
+      "evidence": "manual: P1 control loops; *_D position command, *_Z current position (%)",
+      "target": [
+        "P1_LCV01Z",
+        "level"
+      ],
+      "terms": [
+        [
+          "P1_LCV01D",
+          "mean10",
+          "id"
+        ]
+      ],
+      "window_s": 10,
+      "coef": [
+        0.9912811441187583
+      ],
+      "intercept": 0.02647250590626804,
+      "scale_a": 0.3920319890133092,
+      "r2_fit": 0.98185983464125,
+      "q95_ratio_by_regime": {
+        "low": 1.006564388288299,
+        "mid": 0.9992512749693598,
+        "high": 0.9895427551776408
+      },
+      "worst_ratio": 1.006564388288299,
+      "status": "retained",
+      "reason": ""
+    },
+    {
+      "id": "valve_PCV01",
+      "class": "actuator tracking",
+      "evidence": "manual: P1 control loops; *_D position command, *_Z current position (%)",
+      "target": [
+        "P1_PCV01Z",
+        "level"
+      ],
+      "terms": [
+        [
+          "P1_PCV01D",
+          "mean10",
+          "id"
+        ]
+      ],
+      "window_s": 10,
+      "coef": [
+        1.000567003110663
+      ],
+      "intercept": 0.4506900462914203,
+      "scale_a": 0.3972654947943094,
+      "r2_fit": 0.977427518356044,
+      "q95_ratio_by_regime": {
+        "low": 0.9903090989900194,
+        "mid": 1.0015256115047746,
+        "high": 1.0133991436295364
+      },
+      "worst_ratio": 1.0133991436295364,
+      "status": "retained",
+      "reason": ""
+    },
+    {
+      "id": "valve_PCV02",
+      "class": "actuator tracking",
+      "evidence": "manual: P1 control loops; *_D position command, *_Z current position (%)",
+      "target": [
+        "P1_PCV02Z",
+        "level"
+      ],
+      "terms": [
+        [
+          "P1_PCV02D",
+          "mean3",
+          "id"
+        ]
+      ],
+      "window_s": 3,
+      "coef": [
+        1.0099956397721812
+      ],
+      "intercept": -0.1911077914588084,
+      "scale_a": 0.022624094581604002,
+      "r2_fit": 0.074840684324321,
+      "q95_ratio_by_regime": {
+        "low": 1.0,
+        "mid": 0.9804091342134779,
+        "high": 1.0
+      },
+      "worst_ratio": 1.0,
+      "status": "rejected",
+      "reason": "not identifiable: fitting R2 0.07 < 0.5"
+    },
+    {
+      "id": "flowconv_FT01",
+      "class": "sensor conversion",
+      "evidence": "manual: P1_FT01Z is the flow rate (l/h) converted from differential pressure P1_FT01 (mmH2O)",
+      "target": [
+        "P1_FT01Z",
+        "level"
+      ],
+      "terms": [
+        [
+          "P1_FT01",
+          0,
+          "sqrt"
+        ],
+        [
+          "P1_FT01",
+          0,
+          "id"
+        ]
+      ],
+      "coef": [
+        1.1163794520815253,
+        5.104598281726827
+      ],
+      "intercept": -2.4759871814189864,
+      "scale_a": 2.953699012591716,
+      "r2_fit": 0.9888359791839033,
+      "q95_ratio_by_regime": {
+        "low": 0.9978213262894565,
+        "mid": 0.996259965698918,
+        "high": 1.012936009716142
+      },
+      "worst_ratio": 1.012936009716142,
+      "status": "retained",
+      "reason": ""
+    },
+    {
+      "id": "flowconv_FT02",
+      "class": "sensor conversion",
+      "evidence": "manual: P1_FT02Z is the flow rate (l/h) converted from differential pressure P1_FT02 (mmH2O)",
+      "target": [
+        "P1_FT02Z",
+        "level"
+      ],
+      "terms": [
+        [
+          "P1_FT02",
+          0,
+          "sqrt"
+        ],
+        [
+          "P1_FT02",
+          0,
+          "id"
+        ]
+      ],
+      "coef": [
+        70.96470097238482,
+        -0.09233761104011323
+      ],
+      "intercept": -131.31552883978452,
+      "scale_a": 10.02356046008282,
+      "r2_fit": 0.9988042175267839,
+      "q95_ratio_by_regime": {
+        "low": 0.9987773989526322,
+        "mid": 1.0013478880026296,
+        "high": 1.0089093948156864
+      },
+      "worst_ratio": 1.0089093948156864,
+      "status": "retained",
+      "reason": ""
+    },
+    {
+      "id": "flowconv_FT03",
+      "class": "sensor conversion",
+      "evidence": "manual: P1_FT03Z is the flow rate (l/h) converted from differential pressure P1_FT03 (mmH2O)",
+      "target": [
+        "P1_FT03Z",
+        "level"
+      ],
+      "terms": [
+        [
+          "P1_FT03",
+          0,
+          "sqrt"
+        ],
+        [
+          "P1_FT03",
+          0,
+          "id"
+        ]
+      ],
+      "coef": [
+        350.55202649427105,
+        -9.11754748131163
+      ],
+      "intercept": -2255.90048378359,
+      "scale_a": 0.8847779572901017,
+      "r2_fit": 0.9980699135448157,
+      "q95_ratio_by_regime": {
+        "low": 0.9659730834254548,
+        "mid": 1.0067246355767927,
+        "high": 1.0308005345694702
+      },
+      "worst_ratio": 1.0308005345694702,
+      "status": "retained",
+      "reason": ""
+    },
+    {
+      "id": "mass_P1_return_tank",
+      "class": "mass balance",
+      "evidence": "manual: LIT01 level of the return water tank; FT01Z inflow, FT03Z outflow (l/h)",
+      "target": [
+        "P1_LIT01",
+        "diff30"
+      ],
+      "terms": [
+        [
+          "P1_FT01Z",
+          "mean30",
+          "id"
+        ],
+        [
+          "P1_FT03Z",
+          "mean30",
+          "id"
+        ]
+      ],
+      "sign_check": {
+        "P1_FT01Z": 1,
+        "P1_FT03Z": -1
+      },
+      "coef": [
+        0.12553211502508702,
+        -0.08876457438592364
+      ],
+      "intercept": 47.8156039216498,
+      "scale_a": 0.5160518281343776,
+      "r2_fit": 0.9684771163119384,
+      "q95_ratio_by_regime": {
+        "low": 1.0124620093483379,
+        "mid": 0.982228911576395,
+        "high": 1.0187140024383006
+      },
+      "worst_ratio": 1.0187140024383006,
+      "status": "retained",
+      "reason": ""
+    },
+    {
+      "id": "mass_P3_upper_tank",
+      "class": "mass balance",
+      "evidence": "manual: P3_LIT01 upper-tank level, P3_FIT01 inflow, outflow via LCV01 valve / LCP01 pump",
+      "target": [
+        "P3_LIT01",
+        "diff30"
+      ],
+      "terms": [
+        [
+          "P3_FIT01",
+          "mean30",
+          "id"
+        ],
+        [
+          "P3_LCV01D",
+          "mean30",
+          "id"
+        ],
+        [
+          "P3_LCP01D",
+          "mean30",
+          "id"
+        ]
+      ],
+      "sign_check": {
+        "P3_FIT01": 1
+      },
+      "coef": [
+        -0.1898285188431742,
+        -0.01605743345950351,
+        0.11346658234240123
+      ],
+      "intercept": -226.3676654470791,
+      "scale_a": 315.4046070047432,
+      "r2_fit": 0.6142010258740158,
+      "q95_ratio_by_regime": {
+        "low": 1.0064421758429487,
+        "mid": 0.9924394753209786,
+        "high": 1.0048889858381662
+      },
+      "worst_ratio": 1.0064421758429487,
+      "status": "rejected",
+      "reason": "sign contradicts documented physics"
+    },
+    {
+      "id": "power_P4_steam",
+      "class": "generator tracking",
+      "evidence": "manual: P4 steam-turbine generator output power follows its load demand",
+      "target": [
+        "P4_ST_PO",
+        "level"
+      ],
+      "terms": [
+        [
+          "P4_ST_LD",
+          "mean10",
+          "id"
+        ]
+      ],
+      "window_s": 10,
+      "coef": [
+        0.9124242675549585
+      ],
+      "intercept": 29.34023663035913,
+      "scale_a": 4.333506913459853,
+      "r2_fit": 0.9733885269962792,
+      "q95_ratio_by_regime": {
+        "low": 0.9847677679690947,
+        "mid": 1.0142167574383436,
+        "high": 0.9918752492646283
+      },
+      "worst_ratio": 1.0142167574383436,
+      "status": "retained",
+      "reason": ""
+    },
+    {
+      "id": "power_P4_hydro",
+      "class": "generator tracking",
+      "evidence": "manual: P4 hydro-turbine generator output power follows its scheduled demand",
+      "target": [
+        "P4_HT_PO",
+        "level"
+      ],
+      "terms": [
+        [
+          "P4_HT_PS",
+          "mean30",
+          "id"
+        ]
+      ],
+      "window_s": 30,
+      "coef": [
+        -0.05640244485699905
+      ],
+      "intercept": 34.739189334815215,
+      "scale_a": 46.729623021895755,
+      "r2_fit": 1.3539606804169324e-05,
+      "q95_ratio_by_regime": {
+        "low": 1.0028267274428475,
+        "mid": 1.000059884141686,
+        "high": 0.9960968450255394
+      },
+      "worst_ratio": 1.0028267274428475,
+      "status": "rejected",
+      "reason": "not identifiable: fitting R2 0.00 < 0.5"
+    },
+    {
+      "id": "speed_P2_turbine",
+      "class": "rotor tracking",
+      "evidence": "manual: P2 speed controller output SCO drives turbine speed SIT01 (RPM)",
+      "target": [
+        "P2_SIT01",
+        "level"
+      ],
+      "terms": [
+        [
+          "P2_SCO",
+          "mean1",
+          "id"
+        ]
+      ],
+      "window_s": 1,
+      "coef": [
+        0.1959126314096219
+      ],
+      "intercept": -9814.634655260828,
+      "scale_a": 6.498783568380521,
+      "r2_fit": 0.935660068871945,
+      "q95_ratio_by_regime": {
+        "low": 1.3558364973037222,
+        "mid": 0.8624775822120119,
+        "high": 0.7898929607359491
+      },
+      "worst_ratio": 1.3558364973037222,
+      "status": "retained",
+      "reason": ""
+    }
+  ]
+}

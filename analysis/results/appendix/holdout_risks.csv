@@ -1,0 +1,29 @@
+withheld,model,group,regime,n_targets,forecast_risk,constraint_risk
+low,tailguard,"retained regimes, validation",high,17744,0.02846498414874077,0.19712451100349426
+low,tailguard,"withheld regime, all normal data",low,63588,0.03194722160696983,0.22416922450065613
+low,gru,"retained regimes, validation",high,17744,0.024392206221818924,9.24747085571289
+low,gru,"withheld regime, all normal data",low,63588,0.025644471868872643,9.347505569458008
+low,A2,"retained regimes, validation",high,17744,0.03589169681072235,0.44653740525245667
+low,A2,"withheld regime, all normal data",low,63588,0.03203372284770012,0.20573261380195618
+low,A10,"retained regimes, validation",high,17744,0.037358786910772324,0.41927453875541687
+low,A10,"withheld regime, all normal data",low,63588,0.03199480101466179,0.16219966113567352
+mid,tailguard,"retained regimes, validation",low,18039,0.0307461004704237,0.19173172116279602
+mid,tailguard,"retained regimes, validation",high,17745,0.029459325596690178,0.1979573667049408
+mid,tailguard,"withheld regime, all normal data",mid,54070,0.029066545888781548,0.18018285930156708
+mid,gru,"retained regimes, validation",low,18039,0.027981380000710487,10.257048606872559
+mid,gru,"retained regimes, validation",high,17745,0.026622796431183815,10.395464897155762
+mid,gru,"withheld regime, all normal data",mid,54070,0.026073263958096504,10.151103019714355
+mid,A2,"retained regimes, validation",low,18039,0.030836189165711403,0.23669344186782837
+mid,A2,"retained regimes, validation",high,17745,0.029002990573644638,0.25392839312553406
+mid,A2,"withheld regime, all normal data",mid,54070,0.029367074370384216,0.2086203396320343
+mid,A10,"retained regimes, validation",low,18039,0.03070479817688465,0.18192462623119354
+mid,A10,"retained regimes, validation",high,17745,0.029340175911784172,0.20370802283287048
+mid,A10,"withheld regime, all normal data",mid,54070,0.02914327010512352,0.19572143256664276
+high,tailguard,"retained regimes, validation",low,17992,0.027110742405056953,0.11142800003290176
+high,tailguard,"withheld regime, all normal data",high,61935,0.027320295572280884,0.12943191826343536
+high,gru,"retained regimes, validation",low,17992,0.026628689840435982,11.883671760559082
+high,gru,"withheld regime, all normal data",high,61935,0.027344418689608574,12.365015029907227
+high,A2,"retained regimes, validation",low,17992,0.02740469016134739,0.10418078303337097
+high,A2,"withheld regime, all normal data",high,61935,0.02845742739737034,0.1228707954287529
+high,A10,"retained regimes, validation",low,17992,0.027843249961733818,0.10307510197162628
+high,A10,"withheld regime, all normal data",high,61935,0.028420541435480118,0.11436961591243744

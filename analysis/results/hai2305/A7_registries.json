@@ -1,0 +1,472 @@
+{
+ "17": [
+  {
+   "id": "valve_FCV01",
+   "target": "P1_FCV01Z",
+   "inputs": [
+    "x1003_24_SUM_OUT"
+   ],
+   "r2_fit": 0.09827158179965545
+  },
+  {
+   "id": "valve_FCV02",
+   "target": "P1_FCV02Z",
+   "inputs": [
+    "x1002_07_SETPOINT_OUT"
+   ],
+   "r2_fit": -0.13665641400395456
+  },
+  {
+   "id": "valve_FCV03",
+   "target": "P1_FCV03Z",
+   "inputs": [
+    "P1_TIT02"
+   ],
+   "r2_fit": -0.020301055147404545
+  },
+  {
+   "id": "valve_LCV01",
+   "target": "P1_LCV01Z",
+   "inputs": [
+    "P4_ST_PO"
+   ],
+   "r2_fit": 0.0389054736587775
+  },
+  {
+   "id": "valve_PCV01",
+   "target": "P1_PCV01Z",
+   "inputs": [
+    "P4_HT_PO"
+   ],
+   "r2_fit": 0.16372361926675238
+  },
+  {
+   "id": "flowconv_FT01",
+   "target": "P1_FT01Z",
+   "inputs": [
+    "x1003_18_SETPOINT_OUT",
+    "P1_FCV03D"
+   ],
+   "r2_fit": 0.15407486696875716
+  },
+  {
+   "id": "flowconv_FT02",
+   "target": "P1_FT02Z",
+   "inputs": [
+    "P2_VT01",
+    "P1_TIT02"
+   ],
+   "r2_fit": 0.627137719623653
+  },
+  {
+   "id": "flowconv_FT03",
+   "target": "P1_FT03Z",
+   "inputs": [
+    "P1_FCV02Z",
+    "P4_HT_FD"
+   ],
+   "r2_fit": 0.0002755725965266631
+  },
+  {
+   "id": "mass_P1_return_tank",
+   "target": "P1_LIT01",
+   "inputs": [
+    "P1_TIT02",
+    "P2_SIT01"
+   ],
+   "r2_fit": -0.001270893574969456
+  },
+  {
+   "id": "power_P4_steam",
+   "target": "P4_ST_PO",
+   "inputs": [
+    "P2_VT01"
+   ],
+   "r2_fit": 0.0012653821602504056
+  },
+  {
+   "id": "speed_P2_turbine",
+   "target": "P2_SIT01",
+   "inputs": [
+    "P4_ST_PO"
+   ],
+   "r2_fit": -0.11013972868218835
+  }
+ ],
+ "29": [
+  {
+   "id": "valve_FCV01",
+   "target": "P1_FCV01Z",
+   "inputs": [
+    "P2_VIBTR03"
+   ],
+   "r2_fit": 0.014515098830593987
+  },
+  {
+   "id": "valve_FCV02",
+   "target": "P1_FCV02Z",
+   "inputs": [
+    "P4_ST_PT01"
+   ],
+   "r2_fit": -0.13468905379306517
+  },
+  {
+   "id": "valve_FCV03",
+   "target": "P1_FCV03Z",
+   "inputs": [
+    "P1_FT01Z"
+   ],
+   "r2_fit": 0.13324002060247742
+  },
+  {
+   "id": "valve_LCV01",
+   "target": "P1_LCV01Z",
+   "inputs": [
+    "P4_ST_PO"
+   ],
+   "r2_fit": 0.0389054736587775
+  },
+  {
+   "id": "valve_PCV01",
+   "target": "P1_PCV01Z",
+   "inputs": [
+    "x1002_07_SETPOINT_OUT"
+   ],
+   "r2_fit": 0.0003016311139469874
+  },
+  {
+   "id": "flowconv_FT01",
+   "target": "P1_FT01Z",
+   "inputs": [
+    "P1_FCV02D",
+    "P4_ST_TT01"
+   ],
+   "r2_fit": -0.0002647026368096661
+  },
+  {
+   "id": "flowconv_FT02",
+   "target": "P1_FT02Z",
+   "inputs": [
+    "P1_FT03",
+    "P4_ST_GOV"
+   ],
+   "r2_fit": 0.0012564467680438174
+  },
+  {
+   "id": "flowconv_FT03",
+   "target": "P1_FT03Z",
+   "inputs": [
+    "P1_PIT02",
+    "P1_TIT02"
+   ],
+   "r2_fit": 0.00011547382082721658
+  },
+  {
+   "id": "mass_P1_return_tank",
+   "target": "P1_LIT01",
+   "inputs": [
+    "P2_SCST",
+    "P1_FCV03D"
+   ],
+   "r2_fit": 0.007669234754902332
+  },
+  {
+   "id": "power_P4_steam",
+   "target": "P4_ST_PO",
+   "inputs": [
+    "P2_VIBTR01"
+   ],
+   "r2_fit": 0.0006739483735068719
+  },
+  {
+   "id": "speed_P2_turbine",
+   "target": "P2_SIT01",
+   "inputs": [
+    "P1_FCV02D"
+   ],
+   "r2_fit": -0.11133911900959315
+  }
+ ],
+ "43": [
+  {
+   "id": "valve_FCV01",
+   "target": "P1_FCV01Z",
+   "inputs": [
+    "P3_LIT01"
+   ],
+   "r2_fit": -0.002916240264839498
+  },
+  {
+   "id": "valve_FCV02",
+   "target": "P1_FCV02Z",
+   "inputs": [
+    "P1_FT03"
+   ],
+   "r2_fit": -0.13602283687551098
+  },
+  {
+   "id": "valve_FCV03",
+   "target": "P1_FCV03Z",
+   "inputs": [
+    "P1_PCV01Z"
+   ],
+   "r2_fit": 0.017085287489617684
+  },
+  {
+   "id": "valve_LCV01",
+   "target": "P1_LCV01Z",
+   "inputs": [
+    "P1_FCV03Z"
+   ],
+   "r2_fit": 0.12280715993747915
+  },
+  {
+   "id": "valve_PCV01",
+   "target": "P1_PCV01Z",
+   "inputs": [
+    "P2_SCO"
+   ],
+   "r2_fit": -0.000794560744754369
+  },
+  {
+   "id": "flowconv_FT01",
+   "target": "P1_FT01Z",
+   "inputs": [
+    "P1_TIT01",
+    "P1_FCV01Z"
+   ],
+   "r2_fit": 0.0002718710121678569
+  },
+  {
+   "id": "flowconv_FT02",
+   "target": "P1_FT02Z",
+   "inputs": [
+    "P4_ST_TT01",
+    "x1003_24_SUM_OUT"
+   ],
+   "r2_fit": 0.25236901469367523
+  },
+  {
+   "id": "flowconv_FT03",
+   "target": "P1_FT03Z",
+   "inputs": [
+    "P1_FT01Z",
+    "P1_FT02Z"
+   ],
+   "r2_fit": 0.27441518395916975
+  },
+  {
+   "id": "mass_P1_return_tank",
+   "target": "P1_LIT01",
+   "inputs": [
+    "P2_VIBTR04",
+    "P1_LCV01Z"
+   ],
+   "r2_fit": 0.4851872837063953
+  },
+  {
+   "id": "power_P4_steam",
+   "target": "P4_ST_PO",
+   "inputs": [
+    "P1_PCV01Z"
+   ],
+   "r2_fit": 0.273177515670715
+  },
+  {
+   "id": "speed_P2_turbine",
+   "target": "P2_SIT01",
+   "inputs": [
+    "x1001_15_ASSIGN_OUT"
+   ],
+   "r2_fit": -0.10546823916104708
+  }
+ ],
+ "71": [
+  {
+   "id": "valve_FCV01",
+   "target": "P1_FCV01Z",
+   "inputs": [
+    "P4_HT_FD"
+   ],
+   "r2_fit": -0.0034032391114870997
+  },
+  {
+   "id": "valve_FCV02",
+   "target": "P1_FCV02Z",
+   "inputs": [
+    "P1_LIT01"
+   ],
+   "r2_fit": -0.1366552912383776
+  },
+  {
+   "id": "valve_FCV03",
+   "target": "P1_FCV03Z",
+   "inputs": [
+    "P1_FT02Z"
+   ],
+   "r2_fit": -0.020107406400343253
+  },
+  {
+   "id": "valve_LCV01",
+   "target": "P1_LCV01Z",
+   "inputs": [
+    "x1001_05_SETPOINT_OUT"
+   ],
+   "r2_fit": 0.04818554277214582
+  },
+  {
+   "id": "valve_PCV01",
+   "target": "P1_PCV01Z",
+   "inputs": [
+    "P1_TIT01"
+   ],
+   "r2_fit": 0.0017016960893321276
+  },
+  {
+   "id": "flowconv_FT01",
+   "target": "P1_FT01Z",
+   "inputs": [
+    "P1_LCV01Z",
+    "x1002_08_SETPOINT_OUT"
+   ],
+   "r2_fit": 0.6201222616805329
+  },
+  {
+   "id": "flowconv_FT02",
+   "target": "P1_FT02Z",
+   "inputs": [
+    "x1003_10_SETPOINT_OUT",
+    "P1_FCV01D"
+   ],
+   "r2_fit": 0.9843657274465369
+  },
+  {
+   "id": "flowconv_FT03",
+   "target": "P1_FT03Z",
+   "inputs": [
+    "P1_PCV02Z",
+    "P4_ST_PO"
+   ],
+   "r2_fit": 0.04128000927824227
+  },
+  {
+   "id": "mass_P1_return_tank",
+   "target": "P1_LIT01",
+   "inputs": [
+    "P4_ST_PO",
+    "P3_LCV01D"
+   ],
+   "r2_fit": 0.04998407519224546
+  },
+  {
+   "id": "power_P4_steam",
+   "target": "P4_ST_PO",
+   "inputs": [
+    "P1_FT01"
+   ],
+   "r2_fit": 0.023898491866298333
+  },
+  {
+   "id": "speed_P2_turbine",
+   "target": "P2_SIT01",
+   "inputs": [
+    "P1_FT03Z"
+   ],
+   "r2_fit": -0.11390104446758897
+  }
+ ],
+ "101": [
+  {
+   "id": "valve_FCV01",
+   "target": "P1_FCV01Z",
+   "inputs": [
+    "P1_LCV01D"
+   ],
+   "r2_fit": -0.0018041888310833532
+  },
+  {
+   "id": "valve_FCV02",
+   "target": "P1_FCV02Z",
+   "inputs": [
+    "x1001_05_SETPOINT_OUT"
+   ],
+   "r2_fit": -0.13420558923009018
+  },
+  {
+   "id": "valve_FCV03",
+   "target": "P1_FCV03Z",
+   "inputs": [
+    "P2_VIBTR04"
+   ],
+   "r2_fit": 0.05179057920745267
+  },
+  {
+   "id": "valve_LCV01",
+   "target": "P1_LCV01Z",
+   "inputs": [
+    "P1_FCV02Z"
+   ],
+   "r2_fit": 0.00044819996418532515
+  },
+  {
+   "id": "valve_PCV01",
+   "target": "P1_PCV01Z",
+   "inputs": [
+    "P2_SCO"
+   ],
+   "r2_fit": -0.000794560744754369
+  },
+  {
+   "id": "flowconv_FT01",
+   "target": "P1_FT01Z",
+   "inputs": [
+    "P4_ST_PO",
+    "x1002_08_SETPOINT_OUT"
+   ],
+   "r2_fit": 0.26236977192820454
+  },
+  {
+   "id": "flowconv_FT02",
+   "target": "P1_FT02Z",
+   "inputs": [
+    "x1001_15_ASSIGN_OUT",
+    "P4_ST_FD"
+   ],
+   "r2_fit": 0.0013288842390484223
+  },
+  {
+   "id": "flowconv_FT03",
+   "target": "P1_FT03Z",
+   "inputs": [
+    "P2_SCO",
+    "P4_HT_PO"
+   ],
+   "r2_fit": 0.00045638755751087334
+  },
+  {
+   "id": "mass_P1_return_tank",
+   "target": "P1_LIT01",
+   "inputs": [
+    "P2_VIBTR02",
+    "P2_SCST"
+   ],
+   "r2_fit": 0.005783871951285824
+  },
+  {
+   "id": "power_P4_steam",
+   "target": "P4_ST_PO",
+   "inputs": [
+    "P3_LIT01"
+   ],
+   "r2_fit": 0.05338952435619426
+  },
+  {
+   "id": "speed_P2_turbine",
+   "target": "P2_SIT01",
+   "inputs": [
+    "x1002_07_SETPOINT_OUT"
+   ],
+   "r2_fit": -0.10855316923484426
+  }
+ ]
+}

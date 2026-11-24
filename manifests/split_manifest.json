@@ -1,0 +1,952 @@
+{
+  "dataset": "HAI 23.05",
+  "approved_decisions": {
+    "test_description": "official HAI 23.05 test split; attacks on unseen days interleaved with training",
+    "regime_tag": "P4_ST_PS",
+    "regime_edges": [
+      10.0,
+      20.0
+    ],
+    "regime_names": [
+      "low",
+      "mid",
+      "high"
+    ],
+    "label_join": "positional, verified against official summaries (52/52 intervals)"
+  },
+  "split_fractions": [
+    0.6,
+    0.8
+  ],
+  "cut_rows": [
+    537840,
+    717120
+  ],
+  "cut_timestamps": [
+    "2022-08-16 06:24:01",
+    "2022-08-22 22:12:01"
+  ],
+  "partitions": {
+    "fit": {
+      "rows": 537840,
+      "eligible": 537600,
+      "start": "2022-08-04 18:00:01",
+      "end": "2022-08-16 06:24:00"
+    },
+    "val": {
+      "rows": 179280,
+      "eligible": 178920,
+      "start": "2022-08-16 06:24:01",
+      "end": "2022-08-22 22:12:00"
+    },
+    "cal": {
+      "rows": 179280,
+      "eligible": 179160,
+      "start": "2022-08-22 22:12:01",
+      "end": "2022-08-25 00:00:00"
+    }
+  },
+  "w_max_eligibility": 120,
+  "feature_roles": {
+    "continuous_targets": [
+      "P1_FCV01D",
+      "P1_FCV01Z",
+      "P1_FCV02D",
+      "P1_FCV02Z",
+      "P1_FCV03D",
+      "P1_FCV03Z",
+      "P1_FT01",
+      "P1_FT01Z",
+      "P1_FT02",
+      "P1_FT02Z",
+      "P1_FT03",
+      "P1_FT03Z",
+      "P1_LCV01D",
+      "P1_LCV01Z",
+      "P1_LIT01",
+      "P1_PCV01D",
+      "P1_PCV01Z",
+      "P1_PCV02D",
+      "P1_PCV02Z",
+      "P1_PIT01",
+      "P1_PIT02",
+      "P1_PP04",
+      "P1_TIT01",
+      "P1_TIT02",
+      "P1_TIT03",
+      "P2_24Vdc",
+      "P2_SCO",
+      "P2_SCST",
+      "P2_SIT01",
+      "P2_VIBTR01",
+      "P2_VIBTR02",
+      "P2_VIBTR03",
+      "P2_VIBTR04",
+      "P2_VT01",
+      "P3_FIT01",
+      "P3_LCP01D",
+      "P3_LCV01D",
+      "P3_LIT01",
+      "P3_PIT01",
+      "P4_HT_FD",
+      "P4_HT_PO",
+      "P4_LD",
+      "P4_ST_FD",
+      "P4_ST_GOV",
+      "P4_ST_LD",
+      "P4_ST_PO",
+      "P4_ST_PT01",
+      "P4_ST_TT01",
+      "x1001_05_SETPOINT_OUT",
+      "x1001_15_ASSIGN_OUT",
+      "x1002_07_SETPOINT_OUT",
+      "x1002_08_SETPOINT_OUT",
+      "x1003_10_SETPOINT_OUT",
+      "x1003_18_SETPOINT_OUT",
+      "x1003_24_SUM_OUT"
+    ],
+    "context_setpoints": [
+      "P1_PP04SP",
+      "P2_AutoSD",
+      "P2_ManualSD",
+      "P4_HT_PS",
+      "P4_ST_PS"
+    ],
+    "discrete_actuators": [
+      "P1_PP04D",
+      "P2_ATSW_Lamp",
+      "P2_AutoGO",
+      "P2_MASW",
+      "P2_MASW_Lamp",
+      "P2_ManualGO"
+    ],
+    "excluded_constant_in_fit": [
+      "P1_PIT01_HH",
+      "P1_PP01AD",
+      "P1_PP01AR",
+      "P1_PP01BD",
+      "P1_PP01BR",
+      "P1_PP02D",
+      "P1_PP02R",
+      "P1_SOL01D",
+      "P1_SOL03D",
+      "P1_STSP",
+      "P2_Emerg",
+      "P2_OnOff",
+      "P2_RTR",
+      "P2_TripEx",
+      "P2_VTR01",
+      "P2_VTR02",
+      "P2_VTR03",
+      "P2_VTR04",
+      "P3_LH01",
+      "P3_LL01"
+    ]
+  },
+  "discrete_levels_fit": {
+    "P1_PP04D": [
+      0,
+      1
+    ],
+    "P2_ATSW_Lamp": [
+      0,
+      1
+    ],
+    "P2_AutoGO": [
+      0,
+      1
+    ],
+    "P2_MASW": [
+      0,
+      1
+    ],
+    "P2_MASW_Lamp": [
+      0,
+      1
+    ],
+    "P2_ManualGO": [
+      0,
+      1
+    ]
+  },
+  "scaler_fit": {
+    "P1_FCV01D": {
+      "median": 24.54144,
+      "iqr": 49.9140075,
+      "scale": 49.9140075,
+      "floor": 0.9223854
+    },
+    "P1_FCV01Z": {
+      "median": 24.46137,
+      "iqr": 50.193780000000004,
+      "scale": 50.193780000000004,
+      "floor": 0.9187317
+    },
+    "P1_FCV02D": {
+      "median": 15.0,
+      "iqr": 85.0,
+      "scale": 85.0,
+      "floor": 0.85
+    },
+    "P1_FCV02Z": {
+      "median": 12.68158,
+      "iqr": 84.86175,
+      "scale": 84.86175,
+      "floor": 0.8529663
+    },
+    "P1_FCV03D": {
+      "median": 53.878205,
+      "iqr": 4.327600000000004,
+      "scale": 4.327600000000004,
+      "floor": 0.1843848
+    },
+    "P1_FCV03Z": {
+      "median": 54.58221,
+      "iqr": 4.364020000000004,
+      "scale": 4.364020000000004,
+      "floor": 0.18531799999999998
+    },
+    "P1_FT01": {
+      "median": 62.59917,
+      "iqr": 9.727439999999994,
+      "scale": 9.727439999999994,
+      "floor": 1.979828
+    },
+    "P1_FT01Z": {
+      "median": 325.93298,
+      "iqr": 50.64757999999995,
+      "scale": 50.64757999999995,
+      "floor": 8.8805642
+    },
+    "P1_FT02": {
+      "median": 609.81744,
+      "iqr": 2314.18594,
+      "scale": 2314.18594,
+      "floor": 25.0549326
+    },
+    "P1_FT02Z": {
+      "median": 1567.56628,
+      "iqr": 2851.8078,
+      "scale": 2851.8078,
+      "floor": 31.838430199999998
+    },
+    "P1_FT03": {
+      "median": 246.46756,
+      "iqr": 25.176990000000018,
+      "scale": 25.176990000000018,
+      "floor": 0.6561282999999998
+    },
+    "P1_FT03Z": {
+      "median": 1000.94604,
+      "iqr": 50.96972999999991,
+      "scale": 50.96972999999991,
+      "floor": 1.2971136
+    },
+    "P1_LCV01D": {
+      "median": 15.32708,
+      "iqr": 3.5919599999999967,
+      "scale": 3.5919599999999967,
+      "floor": 0.3423788
+    },
+    "P1_LCV01Z": {
+      "median": 15.16113,
+      "iqr": 3.4484800000000018,
+      "scale": 3.4484800000000018,
+      "floor": 0.3471375
+    },
+    "P1_LIT01": {
+      "median": 347.70767,
+      "iqr": 46.87423000000001,
+      "scale": 46.87423000000001,
+      "floor": 1.4317859
+    },
+    "P1_PCV01D": {
+      "median": 27.878295,
+      "iqr": 3.1730775000000015,
+      "scale": 3.1730775000000015,
+      "floor": 0.29841480000000004
+    },
+    "P1_PCV01Z": {
+      "median": 28.28369,
+      "iqr": 3.303519999999999,
+      "scale": 3.303519999999999,
+      "floor": 0.3007508
+    },
+    "P1_PCV02D": {
+      "median": 12.0,
+      "iqr": 0.0,
+      "scale": 0.051740199999999986,
+      "floor": 0.051740199999999986
+    },
+    "P1_PCV02Z": {
+      "median": 12.04071,
+      "iqr": 0.2441399999999998,
+      "scale": 0.2441399999999998,
+      "floor": 0.04508970000000002
+    },
+    "P1_PIT01": {
+      "median": 1.12473,
+      "iqr": 0.13505000000000011,
+      "scale": 0.13505000000000011,
+      "floor": 0.0156326
+    },
+    "P1_PIT02": {
+      "median": 0.39841,
+      "iqr": 0.38452000000000003,
+      "scale": 0.38452000000000003,
+      "floor": 0.012306300000000001
+    },
+    "P1_PP04": {
+      "median": 34.576049999999995,
+      "iqr": 32.86516,
+      "scale": 32.86516,
+      "floor": 0.45
+    },
+    "P1_TIT01": {
+      "median": 30.14221,
+      "iqr": 1.9683799999999998,
+      "scale": 1.9683799999999998,
+      "floor": 0.06271360000000001
+    },
+    "P1_TIT02": {
+      "median": 35.60485,
+      "iqr": 3.67736,
+      "scale": 3.67736,
+      "floor": 0.0709534
+    },
+    "P1_TIT03": {
+      "median": 27.82492,
+      "iqr": 2.0762,
+      "scale": 2.0762,
+      "floor": 0.04690000000000001
+    },
+    "P2_24Vdc": {
+      "median": 28.0351,
+      "iqr": 0.004359999999998365,
+      "scale": 0.004359999999998365,
+      "floor": 0.0002949000000000268
+    },
+    "P2_SCO": {
+      "median": 54758.0,
+      "iqr": 62.0,
+      "scale": 62.0,
+      "floor": 6.83
+    },
+    "P2_SCST": {
+      "median": 720.5354,
+      "iqr": 0.20330999999998767,
+      "scale": 0.20330999999998767,
+      "floor": 0.01712470000000053
+    },
+    "P2_SIT01": {
+      "median": 913.0,
+      "iqr": 19.0,
+      "scale": 19.0,
+      "floor": 2.0100000000000002
+    },
+    "P2_VIBTR01": {
+      "median": 6.7118,
+      "iqr": 0.6630250000000002,
+      "scale": 0.6630250000000002,
+      "floor": 0.027389999999999998
+    },
+    "P2_VIBTR02": {
+      "median": -3.0243,
+      "iqr": 0.5985,
+      "scale": 0.5985,
+      "floor": 0.021002
+    },
+    "P2_VIBTR03": {
+      "median": 9.5806,
+      "iqr": 0.6185000000000009,
+      "scale": 0.6185000000000009,
+      "floor": 0.02612100000000001
+    },
+    "P2_VIBTR04": {
+      "median": -0.9885,
+      "iqr": 0.5348,
+      "scale": 0.5348,
+      "floor": 0.020201000000000004
+    },
+    "P2_VT01": {
+      "median": 11.96029,
+      "iqr": 0.07842999999999911,
+      "scale": 0.07842999999999911,
+      "floor": 0.00286719999999999
+    },
+    "P3_FIT01": {
+      "median": 53.0,
+      "iqr": 1779.0,
+      "scale": 1779.0,
+      "floor": 54.370000000000005
+    },
+    "P3_LCP01D": {
+      "median": 2992.0,
+      "iqr": 9872.0,
+      "scale": 9872.0,
+      "floor": 138.4
+    },
+    "P3_LCV01D": {
+      "median": 6768.0,
+      "iqr": 14464.0,
+      "scale": 14464.0,
+      "floor": 195.84
+    },
+    "P3_LIT01": {
+      "median": 15430.0,
+      "iqr": 5396.0,
+      "scale": 5396.0,
+      "floor": 117.35000000000001
+    },
+    "P3_PIT01": {
+      "median": 25.0,
+      "iqr": 1021.0,
+      "scale": 1021.0,
+      "floor": 46.33
+    },
+    "P4_HT_FD": {
+      "median": -0.00022,
+      "iqr": 0.00036,
+      "scale": 0.0005533000000000001,
+      "floor": 0.0005533000000000001
+    },
+    "P4_HT_PO": {
+      "median": 31.70209,
+      "iqr": 66.71368,
+      "scale": 66.71368,
+      "floor": 0.9056714
+    },
+    "P4_LD": {
+      "median": 365.578,
+      "iqr": 96.67969,
+      "scale": 96.67969,
+      "floor": 2.6864508000000002
+    },
+    "P4_ST_FD": {
+      "median": -7e-05,
+      "iqr": 0.0021000000000000003,
+      "scale": 0.0021000000000000003,
+      "floor": 0.0003191
+    },
+    "P4_ST_GOV": {
+      "median": 18089.0,
+      "iqr": 2079.25,
+      "scale": 2079.25,
+      "floor": 139.88
+    },
+    "P4_ST_LD": {
+      "median": 331.45258,
+      "iqr": 47.92383000000001,
+      "scale": 47.92383000000001,
+      "floor": 2.6689099
+    },
+    "P4_ST_PO": {
+      "median": 331.10895,
+      "iqr": 38.19445999999999,
+      "scale": 38.19445999999999,
+      "floor": 2.6126666000000003
+    },
+    "P4_ST_PT01": {
+      "median": 9970.0,
+      "iqr": 37.0,
+      "scale": 37.0,
+      "floor": 4.24
+    },
+    "P4_ST_TT01": {
+      "median": 27083.0,
+      "iqr": 190.0,
+      "scale": 190.0,
+      "floor": 6.15
+    },
+    "x1001_05_SETPOINT_OUT": {
+      "median": 0.12971,
+      "iqr": 0.07523,
+      "scale": 0.07523,
+      "floor": 0.0014869
+    },
+    "x1001_15_ASSIGN_OUT": {
+      "median": 1.11912,
+      "iqr": 0.13457000000000008,
+      "scale": 0.13457000000000008,
+      "floor": 0.0082003
+    },
+    "x1002_07_SETPOINT_OUT": {
+      "median": 345.65762,
+      "iqr": 47.91994999999997,
+      "scale": 47.91994999999997,
+      "floor": 0.9619364000000001
+    },
+    "x1002_08_SETPOINT_OUT": {
+      "median": 1001.45605,
+      "iqr": 50.11566000000005,
+      "scale": 50.11566000000005,
+      "floor": 0.9863665000000015
+    },
+    "x1003_10_SETPOINT_OUT": {
+      "median": 1567.56628,
+      "iqr": 2851.8078,
+      "scale": 2851.8078,
+      "floor": 31.838430199999998
+    },
+    "x1003_18_SETPOINT_OUT": {
+      "median": 26.23464,
+      "iqr": 1.1603700000000003,
+      "scale": 1.1603700000000003,
+      "floor": 0.028369399999999986
+    },
+    "x1003_24_SUM_OUT": {
+      "median": 30.311765,
+      "iqr": 1.383074999999998,
+      "scale": 1.383074999999998,
+      "floor": 0.04993150000000004
+    },
+    "P1_PP04SP": {
+      "median": 27.81435,
+      "iqr": 0.6747599999999991,
+      "scale": 0.6747599999999991,
+      "floor": 0.008571600000000004
+    },
+    "P2_AutoSD": {
+      "median": 117.84469,
+      "iqr": 13.22421,
+      "scale": 13.22421,
+      "floor": 0.2854188000000001
+    },
+    "P2_ManualSD": {
+      "median": 12.45193,
+      "iqr": 0.7163900000000005,
+      "scale": 0.7163900000000005,
+      "floor": 0.1292742
+    },
+    "P4_HT_PS": {
+      "median": 4.7588,
+      "iqr": 3.61451,
+      "scale": 3.61451,
+      "floor": 0.07724210000000001
+    },
+    "P4_ST_PS": {
+      "median": 15.28224,
+      "iqr": 10.397799999999998,
+      "scale": 10.397799999999998,
+      "floor": 0.2740268
+    }
+  },
+  "environments": {
+    "fit::hai-train1|fit|2022-08-04": 21479,
+    "fit::hai-train1|fit|2022-08-05": 86400,
+    "fit::hai-train1|fit|2022-08-06": 86400,
+    "fit::hai-train1|fit|2022-08-07": 86401,
+    "fit::hai-train2|fit|2022-08-13": 61079,
+    "fit::hai-train2|fit|2022-08-14": 86400,
+    "fit::hai-train2|fit|2022-08-15": 86400,
+    "fit::hai-train2|fit|2022-08-16": 23041,
+    "val::hai-train2|val|2022-08-16": 34440,
+    "val::hai-train3|val|2022-08-19": 28679,
+    "val::hai-train3|val|2022-08-20": 86400,
+    "val::hai-train3|val|2022-08-21": 10801,
+    "val::hai-train4|val|2022-08-22": 18600,
+    "cal::hai-train4|cal|2022-08-22": 6359,
+    "cal::hai-train4|cal|2022-08-23": 86400,
+    "cal::hai-train4|cal|2022-08-24": 86401
+  },
+  "regime_hours_train": {
+    "fit": {
+      "low": 46.87,
+      "mid": 71.8,
+      "high": 30.73
+    },
+    "val": {
+      "low": 25.09,
+      "mid": 0.0,
+      "high": 24.71
+    },
+    "cal": {
+      "low": 16.25,
+      "mid": 3.1,
+      "high": 30.45
+    }
+  },
+  "regime_hours_test": {
+    "hai-test1": {
+      "low": 0.0,
+      "mid": 4.5,
+      "high": 10.5
+    },
+    "hai-test2": {
+      "low": 38.19,
+      "mid": 6.16,
+      "high": 19.66
+    }
+  },
+  "events": {
+    "hai-test1_E0": {
+      "file": "hai-test1",
+      "start": "2022-08-12 16:25:04",
+      "end": "2022-08-12 16:29:01",
+      "seconds": 238,
+      "regime_at_onset": "high"
+    },
+    "hai-test1_E1": {
+      "file": "hai-test1",
+      "start": "2022-08-12 17:35:01",
+      "end": "2022-08-12 17:38:19",
+      "seconds": 199,
+      "regime_at_onset": "high"
+    },
+    "hai-test1_E10": {
+      "file": "hai-test1",
+      "start": "2022-08-13 02:21:04",
+      "end": "2022-08-13 02:23:15",
+      "seconds": 132,
+      "regime_at_onset": "high"
+    },
+    "hai-test1_E11": {
+      "file": "hai-test1",
+      "start": "2022-08-13 03:26:03",
+      "end": "2022-08-13 03:27:21",
+      "seconds": 79,
+      "regime_at_onset": "mid"
+    },
+    "hai-test1_E12": {
+      "file": "hai-test1",
+      "start": "2022-08-13 04:43:02",
+      "end": "2022-08-13 04:45:15",
+      "seconds": 134,
+      "regime_at_onset": "mid"
+    },
+    "hai-test1_E13": {
+      "file": "hai-test1",
+      "start": "2022-08-13 05:40:08",
+      "end": "2022-08-13 05:50:35",
+      "seconds": 628,
+      "regime_at_onset": "mid"
+    },
+    "hai-test1_E2": {
+      "file": "hai-test1",
+      "start": "2022-08-12 18:32:17",
+      "end": "2022-08-12 18:34:53",
+      "seconds": 157,
+      "regime_at_onset": "high"
+    },
+    "hai-test1_E3": {
+      "file": "hai-test1",
+      "start": "2022-08-12 19:21:04",
+      "end": "2022-08-12 19:23:48",
+      "seconds": 165,
+      "regime_at_onset": "high"
+    },
+    "hai-test1_E4": {
+      "file": "hai-test1",
+      "start": "2022-08-12 20:43:01",
+      "end": "2022-08-12 20:45:42",
+      "seconds": 162,
+      "regime_at_onset": "high"
+    },
+    "hai-test1_E5": {
+      "file": "hai-test1",
+      "start": "2022-08-12 21:36:01",
+      "end": "2022-08-12 21:39:18",
+      "seconds": 198,
+      "regime_at_onset": "high"
+    },
+    "hai-test1_E6": {
+      "file": "hai-test1",
+      "start": "2022-08-12 22:47:01",
+      "end": "2022-08-12 22:57:05",
+      "seconds": 605,
+      "regime_at_onset": "high"
+    },
+    "hai-test1_E7": {
+      "file": "hai-test1",
+      "start": "2022-08-12 23:35:15",
+      "end": "2022-08-12 23:36:51",
+      "seconds": 97,
+      "regime_at_onset": "high"
+    },
+    "hai-test1_E8": {
+      "file": "hai-test1",
+      "start": "2022-08-13 00:25:04",
+      "end": "2022-08-13 00:27:14",
+      "seconds": 131,
+      "regime_at_onset": "high"
+    },
+    "hai-test1_E9": {
+      "file": "hai-test1",
+      "start": "2022-08-13 01:34:09",
+      "end": "2022-08-13 01:35:04",
+      "seconds": 56,
+      "regime_at_onset": "high"
+    },
+    "hai-test2_E0": {
+      "file": "hai-test2",
+      "start": "2022-08-17 01:27:06",
+      "end": "2022-08-17 01:29:18",
+      "seconds": 133,
+      "regime_at_onset": "low"
+    },
+    "hai-test2_E1": {
+      "file": "hai-test2",
+      "start": "2022-08-17 03:37:02",
+      "end": "2022-08-17 03:39:13",
+      "seconds": 132,
+      "regime_at_onset": "high"
+    },
+    "hai-test2_E10": {
+      "file": "hai-test2",
+      "start": "2022-08-17 13:47:05",
+      "end": "2022-08-17 13:50:29",
+      "seconds": 205,
+      "regime_at_onset": "low"
+    },
+    "hai-test2_E11": {
+      "file": "hai-test2",
+      "start": "2022-08-17 14:25:04",
+      "end": "2022-08-17 14:27:11",
+      "seconds": 128,
+      "regime_at_onset": "low"
+    },
+    "hai-test2_E12": {
+      "file": "hai-test2",
+      "start": "2022-08-17 15:13:01",
+      "end": "2022-08-17 15:22:00",
+      "seconds": 540,
+      "regime_at_onset": "low"
+    },
+    "hai-test2_E13": {
+      "file": "hai-test2",
+      "start": "2022-08-17 17:34:04",
+      "end": "2022-08-17 17:35:05",
+      "seconds": 62,
+      "regime_at_onset": "low"
+    },
+    "hai-test2_E14": {
+      "file": "hai-test2",
+      "start": "2022-08-17 18:16:04",
+      "end": "2022-08-17 18:18:31",
+      "seconds": 148,
+      "regime_at_onset": "low"
+    },
+    "hai-test2_E15": {
+      "file": "hai-test2",
+      "start": "2022-08-17 19:40:03",
+      "end": "2022-08-17 19:41:38",
+      "seconds": 96,
+      "regime_at_onset": "low"
+    },
+    "hai-test2_E16": {
+      "file": "hai-test2",
+      "start": "2022-08-17 20:12:03",
+      "end": "2022-08-17 20:20:28",
+      "seconds": 506,
+      "regime_at_onset": "low"
+    },
+    "hai-test2_E17": {
+      "file": "hai-test2",
+      "start": "2022-08-17 22:41:01",
+      "end": "2022-08-17 22:44:35",
+      "seconds": 215,
+      "regime_at_onset": "low"
+    },
+    "hai-test2_E18": {
+      "file": "hai-test2",
+      "start": "2022-08-17 23:38:04",
+      "end": "2022-08-17 23:40:15",
+      "seconds": 132,
+      "regime_at_onset": "low"
+    },
+    "hai-test2_E19": {
+      "file": "hai-test2",
+      "start": "2022-08-18 13:48:03",
+      "end": "2022-08-18 13:50:14",
+      "seconds": 132,
+      "regime_at_onset": "mid"
+    },
+    "hai-test2_E2": {
+      "file": "hai-test2",
+      "start": "2022-08-17 04:21:03",
+      "end": "2022-08-17 04:22:11",
+      "seconds": 69,
+      "regime_at_onset": "high"
+    },
+    "hai-test2_E20": {
+      "file": "hai-test2",
+      "start": "2022-08-18 14:58:52",
+      "end": "2022-08-18 15:00:14",
+      "seconds": 83,
+      "regime_at_onset": "low"
+    },
+    "hai-test2_E21": {
+      "file": "hai-test2",
+      "start": "2022-08-18 16:20:20",
+      "end": "2022-08-18 16:23:51",
+      "seconds": 212,
+      "regime_at_onset": "low"
+    },
+    "hai-test2_E22": {
+      "file": "hai-test2",
+      "start": "2022-08-18 17:38:10",
+      "end": "2022-08-18 17:39:29",
+      "seconds": 80,
+      "regime_at_onset": "low"
+    },
+    "hai-test2_E23": {
+      "file": "hai-test2",
+      "start": "2022-08-18 18:45:06",
+      "end": "2022-08-18 18:46:53",
+      "seconds": 108,
+      "regime_at_onset": "low"
+    },
+    "hai-test2_E24": {
+      "file": "hai-test2",
+      "start": "2022-08-18 19:21:01",
+      "end": "2022-08-18 19:22:01",
+      "seconds": 61,
+      "regime_at_onset": "low"
+    },
+    "hai-test2_E25": {
+      "file": "hai-test2",
+      "start": "2022-08-18 20:32:09",
+      "end": "2022-08-18 20:34:07",
+      "seconds": 119,
+      "regime_at_onset": "low"
+    },
+    "hai-test2_E26": {
+      "file": "hai-test2",
+      "start": "2022-08-18 21:41:02",
+      "end": "2022-08-18 21:43:14",
+      "seconds": 133,
+      "regime_at_onset": "low"
+    },
+    "hai-test2_E27": {
+      "file": "hai-test2",
+      "start": "2022-08-18 23:15:01",
+      "end": "2022-08-18 23:17:36",
+      "seconds": 156,
+      "regime_at_onset": "low"
+    },
+    "hai-test2_E28": {
+      "file": "hai-test2",
+      "start": "2022-08-19 01:23:04",
+      "end": "2022-08-19 01:24:59",
+      "seconds": 116,
+      "regime_at_onset": "low"
+    },
+    "hai-test2_E29": {
+      "file": "hai-test2",
+      "start": "2022-08-19 02:43:01",
+      "end": "2022-08-19 02:45:35",
+      "seconds": 155,
+      "regime_at_onset": "low"
+    },
+    "hai-test2_E3": {
+      "file": "hai-test2",
+      "start": "2022-08-17 05:46:02",
+      "end": "2022-08-17 05:48:04",
+      "seconds": 123,
+      "regime_at_onset": "high"
+    },
+    "hai-test2_E30": {
+      "file": "hai-test2",
+      "start": "2022-08-19 04:34:01",
+      "end": "2022-08-19 04:35:36",
+      "seconds": 96,
+      "regime_at_onset": "low"
+    },
+    "hai-test2_E31": {
+      "file": "hai-test2",
+      "start": "2022-08-19 05:14:02",
+      "end": "2022-08-19 05:16:35",
+      "seconds": 154,
+      "regime_at_onset": "low"
+    },
+    "hai-test2_E32": {
+      "file": "hai-test2",
+      "start": "2022-08-19 06:46:01",
+      "end": "2022-08-19 07:20:12",
+      "seconds": 2052,
+      "regime_at_onset": "high"
+    },
+    "hai-test2_E33": {
+      "file": "hai-test2",
+      "start": "2022-08-19 08:24:01",
+      "end": "2022-08-19 08:32:50",
+      "seconds": 530,
+      "regime_at_onset": "high"
+    },
+    "hai-test2_E34": {
+      "file": "hai-test2",
+      "start": "2022-08-19 09:27:33",
+      "end": "2022-08-19 09:28:59",
+      "seconds": 87,
+      "regime_at_onset": "high"
+    },
+    "hai-test2_E35": {
+      "file": "hai-test2",
+      "start": "2022-08-19 10:34:00",
+      "end": "2022-08-19 10:35:59",
+      "seconds": 120,
+      "regime_at_onset": "high"
+    },
+    "hai-test2_E36": {
+      "file": "hai-test2",
+      "start": "2022-08-19 14:18:00",
+      "end": "2022-08-19 14:21:09",
+      "seconds": 190,
+      "regime_at_onset": "mid"
+    },
+    "hai-test2_E37": {
+      "file": "hai-test2",
+      "start": "2022-08-19 14:51:00",
+      "end": "2022-08-19 14:53:02",
+      "seconds": 123,
+      "regime_at_onset": "high"
+    },
+    "hai-test2_E4": {
+      "file": "hai-test2",
+      "start": "2022-08-17 06:21:05",
+      "end": "2022-08-17 06:22:30",
+      "seconds": 86,
+      "regime_at_onset": "high"
+    },
+    "hai-test2_E5": {
+      "file": "hai-test2",
+      "start": "2022-08-17 08:36:01",
+      "end": "2022-08-17 08:39:17",
+      "seconds": 197,
+      "regime_at_onset": "high"
+    },
+    "hai-test2_E6": {
+      "file": "hai-test2",
+      "start": "2022-08-17 09:42:04",
+      "end": "2022-08-17 09:52:18",
+      "seconds": 615,
+      "regime_at_onset": "high"
+    },
+    "hai-test2_E7": {
+      "file": "hai-test2",
+      "start": "2022-08-17 10:36:02",
+      "end": "2022-08-17 10:38:15",
+      "seconds": 134,
+      "regime_at_onset": "high"
+    },
+    "hai-test2_E8": {
+      "file": "hai-test2",
+      "start": "2022-08-17 11:35:05",
+      "end": "2022-08-17 11:36:30",
+      "seconds": 86,
+      "regime_at_onset": "high"
+    },
+    "hai-test2_E9": {
+      "file": "hai-test2",
+      "start": "2022-08-17 12:25:05",
+      "end": "2022-08-17 12:26:33",
+      "seconds": 89,
+      "regime_at_onset": "low"
+    }
+  },
+  "derived_sha256": {
+    "hai2305_train.parquet": "82315bcf473a04e74dfb2eb8451e6138d24a13ea9fd27fa1d60d3dd8ec783d65",
+    "hai2305_test.parquet": "93f47b50aedccef5046e479b20251f93f21e43896c148a64c040bd7b8d90710a",
+    "hai2305_test_labels.parquet": "fe2fa4ab586f835fff25efd4f12d3cebacf46e0f0820858a72b30406179f2c3d"
+  }
+}

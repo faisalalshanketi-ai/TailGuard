@@ -1,0 +1,369 @@
+{
+ "screen_ratio": 2.0,
+ "min_targets_per_environment": 1000,
+ "relations": [
+  {
+   "id": "mass_T1",
+   "class": "mass balance",
+   "evidence": "ctown_map.inp [CONTROLS]: PU1, PU2 open and close on the level of T1, which they fill",
+   "target": [
+    "L_T1",
+    "diff1"
+   ],
+   "terms": [
+    [
+     "F_PU1",
+     "mean1",
+     "id"
+    ],
+    [
+     "F_PU2",
+     "mean1",
+     "id"
+    ]
+   ],
+   "sign_check": {
+    "F_PU1": 1,
+    "F_PU2": 1
+   },
+   "coef": [
+    -0.04135965606322421,
+    -0.0055426673777443135
+   ],
+   "intercept": 4.565188802028494,
+   "scale_a": 0.10763117129015087,
+   "r2_fit": 0.7138472713661804,
+   "q95_ratio_by_environment": {
+    "band1": 0.9930751505238816,
+    "band2": 0.9925369651573615,
+    "band3": 1.011415047813275
+   },
+   "worst_ratio": 1.011415047813275,
+   "status": "rejected",
+   "reason": "sign contradicts documented physics"
+  },
+  {
+   "id": "mass_T2",
+   "class": "mass balance",
+   "evidence": "ctown_map.inp [CONTROLS]: V2 open and close on the level of T2, which they fill",
+   "target": [
+    "L_T2",
+    "diff1"
+   ],
+   "terms": [
+    [
+     "F_V2",
+     "mean1",
+     "id"
+    ]
+   ],
+   "sign_check": {
+    "F_V2": 1
+   },
+   "coef": [
+    0.010546249628488632
+   ],
+   "intercept": -0.6308234314526855,
+   "scale_a": 0.34889231959350026,
+   "r2_fit": 0.6529716752678856,
+   "q95_ratio_by_environment": {
+    "band1": 0.9955685256693888,
+    "band2": 0.9880153667181407,
+    "band3": 1.0090260517833052
+   },
+   "worst_ratio": 1.0090260517833052,
+   "status": "retained",
+   "reason": ""
+  },
+  {
+   "id": "mass_T3",
+   "class": "mass balance",
+   "evidence": "ctown_map.inp [CONTROLS]: PU4 open and close on the level of T3, which they fill",
+   "target": [
+    "L_T3",
+    "diff1"
+   ],
+   "terms": [
+    [
+     "F_PU4",
+     "mean1",
+     "id"
+    ]
+   ],
+   "sign_check": {
+    "F_PU4": 1
+   },
+   "coef": [
+    0.02193042848215277
+   ],
+   "intercept": -0.32080395839808257,
+   "scale_a": 0.10360951757329308,
+   "r2_fit": 0.8071368839804096,
+   "q95_ratio_by_environment": {
+    "band1": 1.1307017423494723,
+    "band2": 0.8876796921106148,
+    "band3": 1.0240831952618292
+   },
+   "worst_ratio": 1.1307017423494723,
+   "status": "retained",
+   "reason": ""
+  },
+  {
+   "id": "mass_T4",
+   "class": "mass balance",
+   "evidence": "ctown_map.inp [CONTROLS]: PU6, PU7 open and close on the level of T4, which they fill",
+   "target": [
+    "L_T4",
+    "diff1"
+   ],
+   "terms": [
+    [
+     "F_PU6",
+     "mean1",
+     "id"
+    ],
+    [
+     "F_PU7",
+     "mean1",
+     "id"
+    ]
+   ],
+   "sign_check": {
+    "F_PU6": 1,
+    "F_PU7": 1
+   },
+   "coef": [
+    0.01832145911200508,
+    0.01710126705082268
+   ],
+   "intercept": -0.7236598712334567,
+   "scale_a": 0.3038463397918958,
+   "r2_fit": 0.3571111483869641,
+   "q95_ratio_by_environment": {
+    "band1": 0.9959125339729464,
+    "band2": 0.9666360346101504,
+    "band3": 1.0439160577485906
+   },
+   "worst_ratio": 1.0439160577485906,
+   "status": "rejected",
+   "reason": "not identifiable: fitting R2 0.36 < 0.5"
+  },
+  {
+   "id": "mass_T5",
+   "class": "mass balance",
+   "evidence": "ctown_map.inp [CONTROLS]: PU8 open and close on the level of T5, which they fill",
+   "target": [
+    "L_T5",
+    "diff1"
+   ],
+   "terms": [
+    [
+     "F_PU8",
+     "mean1",
+     "id"
+    ]
+   ],
+   "sign_check": {
+    "F_PU8": 1
+   },
+   "coef": [
+    0.025598116329337717
+   ],
+   "intercept": -0.5393098941947002,
+   "scale_a": 0.17430165916828974,
+   "r2_fit": 0.6845405429951195,
+   "q95_ratio_by_environment": {
+    "band1": 0.9723887281971467,
+    "band2": 1.0114846583224841,
+    "band3": 0.9975241270791418
+   },
+   "worst_ratio": 1.0114846583224841,
+   "status": "retained",
+   "reason": ""
+  },
+  {
+   "id": "mass_T7",
+   "class": "mass balance",
+   "evidence": "ctown_map.inp [CONTROLS]: PU10, PU11 open and close on the level of T7, which they fill",
+   "target": [
+    "L_T7",
+    "diff1"
+   ],
+   "terms": [
+    [
+     "F_PU10",
+     "mean1",
+     "id"
+    ],
+    [
+     "F_PU11",
+     "mean1",
+     "id"
+    ]
+   ],
+   "sign_check": {
+    "F_PU10": 1,
+    "F_PU11": 1
+   },
+   "coef": [
+    0.037608085967878735,
+    0.06481376404514706
+   ],
+   "intercept": -0.9535787217303179,
+   "scale_a": 0.4550258872276068,
+   "r2_fit": 0.4171717107793902,
+   "q95_ratio_by_environment": {
+    "band1": 0.9717148951258372,
+    "band2": 1.0328209471451928,
+    "band3": 1.0030600470666389
+   },
+   "worst_ratio": 1.0328209471451928,
+   "status": "rejected",
+   "reason": "not identifiable: fitting R2 0.42 < 0.5"
+  },
+  {
+   "id": "head_PU2",
+   "class": "head across a pump or valve",
+   "evidence": "ctown_map.inp: PU2 connects J280 to J269; head change is a function of its flow",
+   "target": [
+    "P_J269",
+    "level"
+   ],
+   "terms": [
+    [
+     "P_J280",
+     0,
+     "id"
+    ],
+    [
+     "F_PU2",
+     0,
+     "id"
+    ]
+   ],
+   "coef": [
+    2104.355751946377,
+    0.445462614857791
+   ],
+   "intercept": -6269.130451102466,
+   "scale_a": 0.02912873866343266,
+   "r2_fit": 0.9945551375441328,
+   "q95_ratio_by_environment": {
+    "band1": 0.9752592248407834,
+    "band2": 1.0026796498790282,
+    "band3": 1.0123972133113215
+   },
+   "worst_ratio": 1.0123972133113215,
+   "status": "retained",
+   "reason": ""
+  },
+  {
+   "id": "head_PU6",
+   "class": "head across a pump or valve",
+   "evidence": "ctown_map.inp: PU6 connects J289 to J415; head change is a function of its flow",
+   "target": [
+    "P_J415",
+    "level"
+   ],
+   "terms": [
+    [
+     "P_J289",
+     0,
+     "id"
+    ],
+    [
+     "F_PU6",
+     0,
+     "id"
+    ]
+   ],
+   "coef": [
+    0.12916884657397695,
+    0.5338465217289414
+   ],
+   "intercept": 81.6994738198818,
+   "scale_a": 1.5949752230496304,
+   "r2_fit": -0.13602448787541,
+   "q95_ratio_by_environment": {
+    "band1": 1.0031181101626194,
+    "band2": 0.9999807592777614,
+    "band3": 0.9940686937310121
+   },
+   "worst_ratio": 1.0031181101626194,
+   "status": "rejected",
+   "reason": "not identifiable: fitting R2 -0.14 < 0.5"
+  },
+  {
+   "id": "head_PU10",
+   "class": "head across a pump or valve",
+   "evidence": "ctown_map.inp: PU10 connects J307 to J317; head change is a function of its flow",
+   "target": [
+    "P_J317",
+    "level"
+   ],
+   "terms": [
+    [
+     "P_J307",
+     0,
+     "id"
+    ],
+    [
+     "F_PU10",
+     0,
+     "id"
+    ]
+   ],
+   "coef": [
+    0.24553734268601762,
+    0.4086926225336871
+   ],
+   "intercept": 51.386190007004586,
+   "scale_a": 2.6051304360477148,
+   "r2_fit": 0.7373934062490812,
+   "q95_ratio_by_environment": {
+    "band1": 1.022612010056808,
+    "band2": 0.9974617594277341,
+    "band3": 0.9796867357833311
+   },
+   "worst_ratio": 1.022612010056808,
+   "status": "retained",
+   "reason": ""
+  },
+  {
+   "id": "head_V2",
+   "class": "head across a pump or valve",
+   "evidence": "ctown_map.inp: V2 connects J14 to J422; head change is a function of its flow",
+   "target": [
+    "P_J422",
+    "level"
+   ],
+   "terms": [
+    [
+     "P_J14",
+     0,
+     "id"
+    ],
+    [
+     "F_V2",
+     0,
+     "id"
+    ]
+   ],
+   "coef": [
+    0.6034201860393568,
+    0.09631638648868468
+   ],
+   "intercept": 3.9168060113680205,
+   "scale_a": 1.8938313931845978,
+   "r2_fit": 0.3586835896110565,
+   "q95_ratio_by_environment": {
+    "band1": 0.9979084006970915,
+    "band2": 0.9929160278547076,
+    "band3": 1.0085411691956563
+   },
+   "worst_ratio": 1.0085411691956563,
+   "status": "rejected",
+   "reason": "not identifiable: fitting R2 0.36 < 0.5"
+  }
+ ]
+}

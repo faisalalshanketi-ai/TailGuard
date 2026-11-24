@@ -1,0 +1,306 @@
+TailGuard Step 1 audit report  |  HAI 23.05
+Run at 2026-10-13 23:30:42  python 3.13.16  pandas 3.0.5
+Repository commit: 
+CSV files found: ['hai-test1.csv', 'hai-test2.csv', 'hai-train1.csv', 'hai-train2.csv', 'hai-train3.csv', 'hai-train4.csv', 'label-test1.csv', 'label-test2.csv']
+
+=== hai-test1.csv ===
+  status: PASS
+  bytes: 31255559
+  sha256: 78c7f1d4de1f2ab9ccc2f8c719f80f831033543adb0c81d0d78f84f40838d4be
+  rows: 54000
+  ts_min: 2022-08-12 16:00:01
+  ts_max: 2022-08-13 07:00:00
+  duration_hours: 15.0
+  interval_histogram_top: {'1.0': 53999}
+  duplicate_timestamps: 0
+  nonmonotonic_steps: 0
+  ts_parse_failures: 0
+  n_features_excl_time: 86
+  n_continuous: 58
+  label_like_columns: []
+  constant_columns: ['P1_PIT01_HH', 'P1_PP01AD', 'P1_PP01AR', 'P1_PP01BD', 'P1_PP01BR', 'P1_PP02D', 'P1_PP02R', 'P1_PP04SP', 'P1_SOL01D', 'P1_SOL03D', 'P1_STSP', 'P2_ATSW_Lamp', 'P2_AutoGO', 'P2_Emerg', 'P2_MASW', 'P2_MASW_Lamp', 'P2_ManualGO', 'P2_ManualSD', 'P2_OnOff', 'P2_RTR', 'P2_TripEx', 'P2_VTR01', 'P2_VTR02', 'P2_VTR03', 'P2_VTR04', 'P3_LH01', 'P3_LL01']
+  discrete_columns: ['P1_PP04D']
+  columns_with_missing: {}
+  columns_with_inf: {}
+  first_columns: ['timestamp', 'P1_FCV01D', 'P1_FCV01Z', 'P1_FCV02D', 'P1_FCV02Z']
+  documented set points (operating-point occupancy):
+    P2_AutoSD: range_obs=[112.42458, 123.74702] doc=[100, 120] changes=3 distinct=4 top_hours={'123.747': 7.89, '112.425': 3.82, '123.057': 1.68, '119.049': 1.61}
+    P2_ManualSD: range_obs=[12.92742, 12.92742] doc=[11, 12] changes=0 distinct=1 top_hours={'12.927': 15.0}
+    P4_HT_PS: range_obs=[1.29944, 7.94045] doc=[0, 15] changes=1 distinct=2 top_hours={'7.94': 13.61, '1.299': 1.39}
+    P4_ST_PS: range_obs=[15.09827, 20.16145] doc=[0, 50] changes=1 distinct=2 top_hours={'20.161': 10.5, '15.098': 4.5}
+
+=== hai-test2.csv ===
+  status: PASS
+  bytes: 132946575
+  sha256: b2b8dd295aefd87e39260fe43cb4c73ee86d6264b0ac4b0761e7efb0c2b545c3
+  rows: 230400
+  ts_min: 2022-08-17 00:00:01
+  ts_max: 2022-08-19 16:00:00
+  duration_hours: 64.0
+  interval_histogram_top: {'1.0': 230399}
+  duplicate_timestamps: 0
+  nonmonotonic_steps: 0
+  ts_parse_failures: 0
+  n_features_excl_time: 86
+  n_continuous: 60
+  label_like_columns: []
+  constant_columns: ['P1_PIT01_HH', 'P1_PP01AD', 'P1_PP01AR', 'P1_PP01BD', 'P1_PP01BR', 'P1_PP02D', 'P1_PP02R', 'P1_SOL01D', 'P1_SOL03D', 'P1_STSP', 'P2_RTR', 'P2_TripEx', 'P2_VTR01', 'P2_VTR02', 'P2_VTR03', 'P2_VTR04', 'P3_LH01', 'P3_LL01']
+  discrete_columns: ['P1_PP04D', 'P2_ATSW_Lamp', 'P2_AutoGO', 'P2_Emerg', 'P2_MASW', 'P2_MASW_Lamp', 'P2_ManualGO', 'P2_OnOff']
+  columns_with_missing: {}
+  columns_with_inf: {}
+  first_columns: ['timestamp', 'P1_FCV01D', 'P1_FCV01Z', 'P1_FCV02D', 'P1_FCV02Z']
+  documented set points (operating-point occupancy):
+    P2_AutoSD: range_obs=[0.0, 129.69986] doc=[100, 120] changes=27 distinct=22 top_hours={'112.0': 6.91, '106.798': 6.1, '111.01': 5.27, '116.104': 4.13, '127.93': 4.03, '125.375': 3.96, '128.855': 3.95, '105.384': 3.94}
+    P2_ManualSD: range_obs=[0.0, 12.94872] doc=[11, 12] changes=6 distinct=6 top_hours={'12.629': 16.17, '12.66': 11.84, '12.949': 11.03, '12.411': 9.75, '0.0': 9.61, '12.452': 5.6}
+    P4_HT_PS: range_obs=[0.10037, 5.77804] doc=[0, 15] changes=5 distinct=6 top_hours={'3.64': 21.09, '5.778': 14.64, '0.877': 9.21, '5.338': 7.66, '4.173': 5.84, '0.1': 5.56}
+    P4_ST_PS: range_obs=[0.84523, 28.91504] doc=[0, 50] changes=10 distinct=11 top_hours={'0.845': 14.97, '6.353': 14.76, '28.915': 6.14, '27.494': 6.11, '9.988': 5.95, '18.599': 3.1, '21.868': 3.09, '16.662': 3.06}
+
+=== hai-train1.csv ===
+  status: PASS
+  bytes: 162418984
+  sha256: 53007b0ba604fbf338e7ac2e08cd81d874b5d1388f3aecb213ddcba5bf2bec4a
+  rows: 280800
+  ts_min: 2022-08-04 18:00:01
+  ts_max: 2022-08-08 00:00:00
+  duration_hours: 78.0
+  interval_histogram_top: {'1.0': 280799}
+  duplicate_timestamps: 0
+  nonmonotonic_steps: 0
+  ts_parse_failures: 0
+  n_features_excl_time: 86
+  n_continuous: 60
+  label_like_columns: []
+  constant_columns: ['P1_PIT01_HH', 'P1_PP01AD', 'P1_PP01AR', 'P1_PP01BD', 'P1_PP01BR', 'P1_PP02D', 'P1_PP02R', 'P1_SOL01D', 'P1_SOL03D', 'P1_STSP', 'P2_Emerg', 'P2_OnOff', 'P2_RTR', 'P2_TripEx', 'P2_VTR01', 'P2_VTR02', 'P2_VTR03', 'P2_VTR04', 'P3_LH01', 'P3_LL01']
+  discrete_columns: ['P1_PP04D', 'P2_ATSW_Lamp', 'P2_AutoGO', 'P2_MASW', 'P2_MASW_Lamp', 'P2_ManualGO']
+  columns_with_missing: {}
+  columns_with_inf: {}
+  first_columns: ['timestamp', 'P1_FCV01D', 'P1_FCV01Z', 'P1_FCV02D', 'P1_FCV02Z']
+  documented set points (operating-point occupancy):
+    P2_AutoSD: range_obs=[100.73859, 129.28047] doc=[100, 120] changes=24 distinct=25 top_hours={'128.577': 8.03, '126.995': 7.85, '127.189': 5.97, '112.978': 4.46, '127.876': 4.19, '105.317': 4.1, '106.715': 4.03, '128.342': 4.03}
+    P2_ManualSD: range_obs=[0.0, 12.92742] doc=[11, 12] changes=6 distinct=7 top_hours={'12.064': 17.95, '12.084': 14.1, '12.927': 12.51, '0.0': 11.47, '12.707': 9.86, '12.832': 8.03, '12.656': 4.08}
+    P4_HT_PS: range_obs=[0.07477, 7.79898] doc=[0, 15] changes=5 distinct=6 top_hours={'4.914': 24.11, '0.075': 18.3, '7.271': 15.16, '3.432': 12.43, '7.799': 6.0, '5.835': 1.99}
+    P4_ST_PS: range_obs=[1.87897, 29.28165] doc=[0, 50] changes=14 distinct=15 top_hours={'16.237': 15.11, '21.541': 12.13, '7.832': 9.52, '5.589': 6.02, '29.282': 5.96, '14.829': 5.82, '7.006': 5.05, '10.685': 3.05}
+
+=== hai-train2.csv ===
+  status: PASS
+  bytes: 169121615
+  sha256: 0e520e82bf78a661ab19ce4967f3c766bd809820f457a9c90c365102d4534c56
+  rows: 291600
+  ts_min: 2022-08-13 07:00:01
+  ts_max: 2022-08-16 16:00:00
+  duration_hours: 81.0
+  interval_histogram_top: {'1.0': 291599}
+  duplicate_timestamps: 0
+  nonmonotonic_steps: 0
+  ts_parse_failures: 0
+  n_features_excl_time: 86
+  n_continuous: 60
+  label_like_columns: []
+  constant_columns: ['P1_PIT01_HH', 'P1_PP01AD', 'P1_PP01AR', 'P1_PP01BD', 'P1_PP01BR', 'P1_PP02D', 'P1_PP02R', 'P1_SOL01D', 'P1_SOL03D', 'P1_STSP', 'P2_Emerg', 'P2_OnOff', 'P2_RTR', 'P2_TripEx', 'P2_VTR01', 'P2_VTR02', 'P2_VTR03', 'P2_VTR04', 'P3_LH01', 'P3_LL01']
+  discrete_columns: ['P1_PP04D', 'P2_ATSW_Lamp', 'P2_AutoGO', 'P2_MASW', 'P2_MASW_Lamp', 'P2_ManualGO']
+  columns_with_missing: {}
+  columns_with_inf: {}
+  first_columns: ['timestamp', 'P1_FCV01D', 'P1_FCV01Z', 'P1_FCV02D', 'P1_FCV02Z']
+  documented set points (operating-point occupancy):
+    P2_AutoSD: range_obs=[101.79202, 127.58486] doc=[100, 120] changes=23 distinct=24 top_hours={'110.521': 8.1, '120.475': 7.96, '117.845': 6.08, '125.08': 5.9, '110.981': 5.89, '118.729': 4.12, '115.081': 4.11, '114.933': 4.04}
+    P2_ManualSD: range_obs=[12.45193, 12.92742] doc=[11, 12] changes=2 distinct=3 top_hours={'12.452': 60.43, '12.8': 11.95, '12.927': 8.62}
+    P4_HT_PS: range_obs=[0.10037, 7.2757] doc=[0, 15] changes=7 distinct=8 top_hours={'3.587': 21.1, '4.759': 17.87, '0.606': 15.38, '1.299': 7.23, '7.276': 6.0, '6.814': 5.99, '4.172': 5.78, '0.1': 1.65}
+    P4_ST_PS: range_obs=[1.13254, 28.80919] doc=[0, 50] changes=11 distinct=12 top_hours={'3.849': 15.11, '15.282': 14.77, '11.773': 12.01, '18.23': 6.19, '17.576': 6.1, '24.881': 5.94, '21.481': 5.8, '1.133': 4.56}
+
+=== hai-train3.csv ===
+  status: PASS
+  bytes: 72774793
+  sha256: bfcec2dc05adea103e7491546b0e28268faaa26d3cc717d10f4595c94b81e85d
+  rows: 126000
+  ts_min: 2022-08-19 16:00:01
+  ts_max: 2022-08-21 03:00:00
+  duration_hours: 35.0
+  interval_histogram_top: {'1.0': 125999}
+  duplicate_timestamps: 0
+  nonmonotonic_steps: 0
+  ts_parse_failures: 0
+  n_features_excl_time: 86
+  n_continuous: 58
+  label_like_columns: []
+  constant_columns: ['P1_PCV02D', 'P1_PIT01_HH', 'P1_PP01AD', 'P1_PP01AR', 'P1_PP01BD', 'P1_PP01BR', 'P1_PP02D', 'P1_PP02R', 'P1_PP04SP', 'P1_SOL01D', 'P1_SOL03D', 'P1_STSP', 'P2_Emerg', 'P2_OnOff', 'P2_RTR', 'P2_TripEx', 'P2_VTR01', 'P2_VTR02', 'P2_VTR03', 'P2_VTR04', 'P3_LH01', 'P3_LL01']
+  discrete_columns: ['P1_PP04D', 'P2_ATSW_Lamp', 'P2_AutoGO', 'P2_MASW', 'P2_MASW_Lamp', 'P2_ManualGO']
+  columns_with_missing: {}
+  columns_with_inf: {}
+  first_columns: ['timestamp', 'P1_FCV01D', 'P1_FCV01Z', 'P1_FCV02D', 'P1_FCV02Z']
+  documented set points (operating-point occupancy):
+    P2_AutoSD: range_obs=[104.09725, 128.30089] doc=[100, 120] changes=10 distinct=11 top_hours={'124.622': 6.13, '125.254': 6.04, '118.798': 4.02, '112.624': 3.95, '127.289': 3.85, '104.097': 2.08, '128.301': 2.08, '127.769': 1.99}
+    P2_ManualSD: range_obs=[0.0, 12.85642] doc=[11, 12] changes=2 distinct=3 top_hours={'0.0': 13.59, '12.856': 11.66, '12.223': 9.75}
+    P4_HT_PS: range_obs=[1.32982, 7.53318] doc=[0, 15] changes=3 distinct=4 top_hours={'5.338': 13.66, '5.756': 11.75, '1.33': 9.09, '7.533': 0.5}
+    P4_ST_PS: range_obs=[8.08544, 26.13879] doc=[0, 50] changes=3 distinct=4 top_hours={'8.085': 15.33, '24.671': 10.5, '26.139': 6.27, '23.558': 2.9}
+
+=== hai-train4.csv ===
+  status: PASS
+  bytes: 114494940
+  sha256: 56658c83657d42a65db982b864362e0d0ffeb96d1f7b357d5e76e3a5c522d940
+  rows: 198000
+  ts_min: 2022-08-22 17:00:01
+  ts_max: 2022-08-25 00:00:00
+  duration_hours: 55.0
+  interval_histogram_top: {'1.0': 197999}
+  duplicate_timestamps: 0
+  nonmonotonic_steps: 0
+  ts_parse_failures: 0
+  n_features_excl_time: 86
+  n_continuous: 60
+  label_like_columns: []
+  constant_columns: ['P1_PIT01_HH', 'P1_PP01AD', 'P1_PP01AR', 'P1_PP01BD', 'P1_PP01BR', 'P1_PP02D', 'P1_PP02R', 'P1_SOL01D', 'P1_SOL03D', 'P1_STSP', 'P2_Emerg', 'P2_OnOff', 'P2_RTR', 'P2_TripEx', 'P2_VTR01', 'P2_VTR02', 'P2_VTR03', 'P2_VTR04', 'P3_LH01', 'P3_LL01']
+  discrete_columns: ['P1_PP04D', 'P2_ATSW_Lamp', 'P2_AutoGO', 'P2_MASW', 'P2_MASW_Lamp', 'P2_ManualGO']
+  columns_with_missing: {}
+  columns_with_inf: {}
+  first_columns: ['timestamp', 'P1_FCV01D', 'P1_FCV01Z', 'P1_FCV02D', 'P1_FCV02Z']
+  documented set points (operating-point occupancy):
+    P2_AutoSD: range_obs=[107.38635, 129.35278] doc=[100, 120] changes=12 distinct=13 top_hours={'109.167': 10.45, '118.575': 8.62, '129.353': 5.99, '107.95': 4.15, '116.263': 4.08, '115.934': 3.97, '126.875': 3.94, '126.359': 3.91}
+    P2_ManualSD: range_obs=[12.56844, 12.85642] doc=[11, 12] changes=2 distinct=3 top_hours={'12.568': 24.0, '12.856': 20.46, '12.726': 10.54}
+    P4_HT_PS: range_obs=[2.39959, 7.53318] doc=[0, 15] changes=3 distinct=4 top_hours={'7.533': 18.44, '2.4': 15.07, '4.401': 12.14, '4.244': 9.35}
+    P4_ST_PS: range_obs=[1.97278, 28.91775] doc=[0, 50] changes=7 distinct=8 top_hours={'28.445': 15.15, '28.918': 12.39, '8.085': 9.5, '3.062': 5.89, '1.973': 3.12, '11.047': 3.1, '3.531': 2.94, '28.754': 2.91}
+
+=== label-test1.csv  (paired with hai-test1.csv) ===
+  file: label-test1.csv
+  rows: 54000
+  columns: ['timestamp', 'label']
+  label_column: label
+  label_values: {'0': 51019, '1': 2981}
+  same_length: True
+  timestamps_identical: True
+  label_ts_unique: True
+  test_rows_without_label: 0
+  positive_rows: 2981
+  positive_rate: 0.0552
+  positive_runs: 14
+  run_lengths_s_first20: [238, 199, 157, 165, 162, 198, 605, 97, 131, 56, 132, 79, 134, 628]
+
+=== label-test2.csv  (paired with hai-test2.csv) ===
+  file: label-test2.csv
+  rows: 230400
+  columns: ['timestamp', 'label']
+  label_column: label
+  label_values: {'0': 221997, '1': 8403}
+  same_length: True
+  timestamps_identical: False
+  label_ts_unique: False
+  test_rows_without_label: 226560
+  positive_rows: 8403
+  positive_rate: 0.03647
+  positive_runs: 38
+  run_lengths_s_first20: [133, 132, 69, 123, 86, 197, 615, 134, 86, 89, 205, 128, 540, 62, 148, 96, 506, 215, 132, 132]
+
+=== summary_label1.txt (1591 bytes) ===
+=================================================================================
+File Name	: hai3/20220825_101225/test/split_label_220812_16_15_01_s081216_e081307.csv 
+  File Size	: 1.1800 MB
+  Columns	: 1 
+    Names	: timestamp, label, 
+StartTime		: 2022-08-12 16:00:01
+ EndTime		: 2022-08-13 07:00:00
+ Duration		: 15.00 hours / 0.63 days 
+  Attacks		: 14 times
+
+-------------------------------|  Attacks |--------------------------------------
+ Duration		: min 00:00:55 / max 00:10:27 / avg 00:03:31
+ Total		: 00:49:27 (5.49 percent)
+---------------------------------------------------------------------------------
+index	Start Time		End Time			Duration
+---------------------------------------------------------------------------------
+[  1]	2022-08-12 16:25:04	2022-08-12 16:29:01	00:03:57
+[  2]	2022-08-12 17:35:01	2022-08-12 17:38:19	00:03:18
+[  3]	2022-08-12 18:32:17	2022-08-12 18:34:53	00:02:36
+[  4]	2022-08-12 19:21:04	2022-08-12 19:23:48	00:02:44
+[  5]	2022-08-12 20:43:01	2022-08-12 20:45:42	00:02:41
+[  6]	2022-08-12 21:36:01	2022-08-12 21:39:18	00:03:17
+[  7]	2022-08-12 22:47:01	2022-08-12 22:57:05	00:10:04
+[  8]	2022-08-12 23:35:15	2022-08-12 23:36:51	00:01:36
+[  9]	2022-08-13 00:25:04	2022-08-13 00:27:14	00:02:10
+[ 10]	2022-08-13 01:34:09	2022-08-13 01:35:04	00:00:55
+[ 11]	2022-08-13 02:21:04	2022-08-13 02:23:15	00:02:11
+[ 12]	2022-08-13 03:26:03	2022-08-13 03:27:21	00:01:18
+[ 13]	2022-08-13 04:43:02	2022-08-13 04:45:15	00:02:13
+[ 14]	2022-08-13 05:40:08	2022-08-13 05:50:35	00:10:27
+=================================================================================
+
+
+=== summary_label2.txt (2911 bytes) ===
+=================================================================================
+File Name	: hai3/20220825_101225/test/split_label_220817_00_64_01_s081700_e081916.csv 
+  File Size	: 5.0500 MB
+  Columns	: 1 
+    Names	: timestamp, label, 
+StartTime		: 2022-08-17 00:00:01
+ EndTime		: 2022-08-19 16:00:00
+ Duration		: 64.00 hours / 2.67 days 
+  Attacks		: 40 times
+
+-------------------------------|  Attacks |--------------------------------------
+ Duration		: min 00:01:00 / max 00:34:11 / avg 00:03:38
+ Total		: 02:25:35 (3.79 percent)
+---------------------------------------------------------------------------------
+index	Start Time		End Time			Duration
+---------------------------------------------------------------------------------
+[  1]	2022-08-17 01:27:06	2022-08-17 01:29:18	00:02:12
+[  2]	2022-08-17 03:37:02	2022-08-17 03:39:13	00:02:11
+[  3]	2022-08-17 04:21:03	2022-08-17 04:22:11	00:01:08
+[  4]	2022-08-17 05:46:02	2022-08-17 05:48:04	00:02:02
+[  5]	2022-08-17 06:21:05	2022-08-17 06:22:30	00:01:25
+[  6]	2022-08-17 08:36:01	2022-08-17 08:39:17	00:03:16
+[  7]	2022-08-17 09:42:04	2022-08-17 09:52:18	00:10:14
+[  8]	2022-08-17 10:36:02	2022-08-17 10:38:15	00:02:13
+[  9]	2022-08-17 11:35:05	2022-08-17 11:36:30	00:01:25
+[ 10]	2022-08-17 12:25:05	2022-08-17 12:26:33	00:01:28
+[ 11]	2022-08-17 13:47:05	2022-08-17 13:50:29	00:03:24
+[ 12]	2022-08-17 14:25:04	2022-08-17 14:27:11	00:02:07
+[ 13]	2022-08-17 15:13:01	2022-08-17 15:22:00	00:08:59
+[ 14]	2022-08-17 17:34:04	2022-08-17 17:35:05	00:01:01
+[ 15]	2022-08-17 18:16:04	2022-08-17 18:18:31	00:02:27
+[ 16]	2022-08-17 19:40:03	2022-08-17 19:41:38	00:01:35
+[ 17]	2022-08-17 20:12:03	2022-08-17 20:20:28	00:08:25
+[ 18]	2022-08-17 22:41:01	2022-08-17 22:44:35	00:03:34
+[ 19]	2022-08-17 23:38:04	2022-08-17 23:40:15	00:02:11
+[ 20]	2022-08-18 13:48:03	2022-08-18 13:50:14	00:02:11
+[ 21]	2022-08-18 14:58:52	2022-08-18 15:00:14	00:01:22
+[ 22]	2022-08-18 16:20:20	2022-08-18 16:23:51	00:03:31
+[ 23]	2022-08-18 17:38:10	2022-08-18 17:39:29	00:01:19
+[ 24]	2022-08-18 18:45:06	2022-08-18 18:46:53	00:01:47
+[ 25]	2022-08-18 19:21:01	2022-08-18 19:22:01	00:01:00
+[ 26]	2022-08-18 20:32:09	2022-08-18 20:34:07	00:01:58
+[ 27]	2022-08-18 21:41:02	2022-08-18 21:43:14	00:02:12
+[ 28]	2022-08-18 23:15:01	2022-08-18 23:17:36	00:02:35
+[ 29]	2022-08-19 01:23:04	2022-08-19 01:24:59	00:01:55
+[ 30]	2022-08-19 02:43:01	2022-08-19 02:45:35	00:02:34
+[ 31]	2022-08-19 04:34:01	2022-08-19 04:35:36	00:01:35
+[ 32]	2022-08-19 05:14:02	2022-08-19 05:16:35	00:02:33
+[ 33]	2022-08-19 06:46:01	2022-08-19 07:20:12	00:34:11
+[ 34]	2022-08-19 08:24:01	2022-08-19 08:32:50	00:08:49
+[ 35]	2022-08-19 09:27:33	2022-08-19 09:28:59	00:01:26
+[ 36]	2022-08-19 10:34:00	2022-08-19 10:35:59	00:01:59
+[ 37]	2022-08-19 14:18:00	2022-08-19 14:21:09	00:03:09
+[ 38]	2022-08-19 14:51:00	2022-08-19 14:53:02	00:02:02
+=================================================================================
+
+
+AUDIT STATUS: PASS   (17 s)
+=== ANALYST NOTES (added after automated audit, 2026-10-13) ===
+1. Integrity: all 10 files match the official Git LFS SHA-256 hashes and sizes at repo commit
+   2a814cebc9a66b06c9e5cd545e2d72e65d383737 (Kaggle/manual copy in C:\tailguard\hai-23.05).
+2. label-test2.csv timestamps are truncated to the minute (e.g. "2022-08-17 0:00"), so a timestamp join
+   fails. Row counts are equal (230,400) and POSITIONAL alignment reproduces all 38 attack intervals of
+   summary_label2.txt exactly (38/38). label-test1.csv aligns by timestamp and positionally (14/14).
+   Policy frozen: join labels positionally, verified against the official summaries.
+   (summary_label2.txt header says "40 times" but lists 38 intervals; 38 is used, = technical manual.)
+3. Attack events: 14 (test1) + 38 (test2) = 52.
+4. Normal training: 249 h at 1 Hz, no gaps, no duplicates, 86 tags. Test: 79 h.
+5. Calendar order: train1 Aug 4-8 | test1 Aug 12-13 | train2 Aug 13-16 | test2 Aug 17-19 |
+   train3 Aug 19-21 | train4 Aug 22-25. The official test files are interleaved with, not after,
+   the training files.
+6. Set points recorded in HAI 23.05: P2_AutoSD, P2_ManualSD, P4_ST_PS, P4_HT_PS (+P1_PP04SP, P1_STSP).
+   The P1 HMM set points (P1_B3004, P1_B400B, P1_B2016, P1_B4022) are not present in HAI 23.05.
+   Observed P2_AutoSD reaches 129.7 and P2_ManualSD 12.9, above the manual's stated ranges.
+7. Regime occupancy, hours by P4_ST_PS band [0,10) / [10,20) / [20,30):
+   train1 31.8/28.1/18.1  train2 19.7/43.7/17.7  train3 15.3/0.0/19.7  train4 21.5/3.1/30.4
+   test1 0.0/4.5/10.5     test2 38.2/6.2/19.7
+   -> three regimes each with >= 46 h of normal training data: leave-one-regime-out is feasible.
+8. Tags constant in all training files but varying in test2: P2_Emerg, P2_OnOff.
+   Fitting-constant tags must be excluded from model inputs for every method.

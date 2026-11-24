@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article."
+title: "Tail-Probability Scores with Dependence-Robust False-Alarm Guarantees for Intrusion Detection in Industrial Control Systems"
+type: software
+version: 1.2.0
+date-released: 2026-11-19
+license: MIT
+repository-code: "https://github.com/faisalalshanketi-ai/tailguard"
+keywords: [tail probabilities, false-alarm guarantees, exchangeability, serial dependence, intrusion detection, industrial control systems, HAI, BATADAL]
+authors:
+  - family-names: Alshanketi
+    given-names: Faisal
+    affiliation: "Department of Computer Science, College of Engineering and Computer Science, Jazan University"
+    email: falshanketi@jazanu.edu.sa
+preferred-citation:
+  type: article
+  title: "Tail-Probability Scores with Dependence-Robust False-Alarm Guarantees for Intrusion Detection in Industrial Control Systems"
+  authors:
+    - family-names: Alshanketi
+      given-names: Faisal
+  journal: "Mathematics"
+  year: 2026
+  notes: "Submitted"

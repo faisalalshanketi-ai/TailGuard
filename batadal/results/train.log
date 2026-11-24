@@ -1,0 +1,15 @@
+tailguard seed 17: 100 epochs, validation loss ratio 0.7275, 106s
+tailguard seed 29: 100 epochs, validation loss ratio 0.7216, 100s
+tailguard seed 43: 100 epochs, validation loss ratio 0.7212, 98s
+tailguard seed 71: 100 epochs, validation loss ratio 0.7321, 97s
+tailguard seed 101: 100 epochs, validation loss ratio 0.7199, 95s
+gru seed 17: 95 epochs, validation loss ratio 0.1534, 90s
+gru seed 29: 100 epochs, validation loss ratio 0.1517, 95s
+gru seed 43: 100 epochs, validation loss ratio 0.1519, 96s
+gru seed 71: 100 epochs, validation loss ratio 0.1369, 96s
+gru seed 101: 100 epochs, validation loss ratio 0.1672, 96s
+A1_nophys seed 17: 100 epochs, validation loss ratio 0.7556, 99s
+A1_nophys seed 29: 100 epochs, validation loss ratio 0.7540, 101s
+A1_nophys seed 43: 100 epochs, validation loss ratio 0.7451, 98s
+A1_nophys seed 71: 100 epochs, validation loss ratio 0.7580, 98s
+A1_nophys seed 101: 100 epochs, validation loss ratio 0.7485, 98s

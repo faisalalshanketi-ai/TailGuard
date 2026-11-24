@@ -1,0 +1,47 @@
+TailGuard Step 2 report | HAI 22.04 (confirmation set)
+Training rows 1,004,402 (279.0 h); cut rows 602,641 / 803,521
+Cut timestamps: fit|val at 2021-08-03 17:24:00, val|cal at 2021-08-07 01:12:00
+  fit: 167.4 h  2021-07-11 10:00:00 -> 2021-08-03 17:23:59  eligible targets 602,041
+  val: 55.8 h  2021-08-03 17:24:00 -> 2021-08-07 01:11:59  eligible targets 200,640
+  cal: 55.8 h  2021-08-07 01:12:00 -> 2021-08-09 09:00:00  eligible targets 200,761
+Feature roles (from fitting data): 56 continuous targets, 5 set-point context, 7 discrete actuators, 18 excluded constant
+  context: ['P1_PP04SP', 'P2_AutoSD', 'P2_ManualSD', 'P4_HT_PS', 'P4_ST_PS']
+  discrete: ['P2_ATSW_Lamp', 'P2_AutoGO', 'P2_MASW', 'P2_MASW_Lamp', 'P2_ManualGO', 'P3_LH01', 'P3_LL01']
+  excluded: ['P1_PIT01_HH', 'P1_PP01AD', 'P1_PP01AR', 'P1_PP01BD', 'P1_PP01BR', 'P1_PP02D', 'P1_PP02R', 'P1_SOL01D', 'P1_SOL03D', 'P1_STSP', 'P2_Emerg', 'P2_OnOff', 'P2_RTR', 'P2_TripEx', 'P2_VTR01', 'P2_VTR02', 'P2_VTR03', 'P2_VTR04']
+Environments (eligible targets):
+  fit  train1 2021-07-11  50,280
+  fit  train1 2021-07-12  43,201
+  fit  train2 2021-07-17  86,279
+  fit  train2 2021-07-18  86,400
+  fit  train2 2021-07-19  28,801
+  fit  train3 2021-07-23  21,479
+  fit  train3 2021-07-24  86,400
+  fit  train3 2021-07-25  18,001
+  fit  train4 2021-07-26  43,080
+  fit  train4 2021-07-27  43,201
+  fit  train5 2021-08-02  32,279
+  fit  train5 2021-08-03  62,640
+  val  train5 2021-08-03  23,640
+  val  train5 2021-08-04  86,400
+  val  train5 2021-08-05  32,401
+  val  train6 2021-08-06  53,879
+  val  train6 2021-08-07  4,320
+  cal  train6 2021-08-07  81,960
+  cal  train6 2021-08-08  86,400
+  cal  train6 2021-08-09  32,401
+Regime hours by partition (low/mid/high):
+regime        0     1     2
+partition                  
+fit        64.6  34.1  68.7
+val        16.6  24.1  15.1
+cal        28.3  18.6   8.9
+Regime hours by test file:
+regime      0     1     2
+file_id                  
+test1     0.0   0.0  24.0
+test2     4.1   1.2  17.7
+test3     0.0  11.3   6.0
+test4    11.9   6.0  18.1
+Attack events: 58  by onset regime: {'high': 35, 'mid': 12, 'low': 11}
+Attack seconds lost to the first-120 eligibility rule: 0
+Done in 21 s

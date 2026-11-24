@@ -1,0 +1,10 @@
+# HAI 23.05 test-label reads. The first, prespecified unsealing (Sections 4.1-4.4) was performed by step6_evaluate.py in the
+# original pipeline run; its log line was not preserved in this release. Every later read is listed below.
+2026-10-21 11:57:55 test labels read by step6_evaluate_max.py (post-hoc max-tail-surprise extension, frozen variant)
+2026-10-22 01:07:39 test labels unsealed by step6_evaluate.py (re-run on the same frozen scores to reproduce the published tables; identical output)
+2026-10-22 test labels read by review_analyses.py (descriptive analyses of frozen scores)
+2026-10-22 test labels read by tail_sensitivity.py (descriptive)
+2026-10-22 test labels read by review_runs_eval.py, fa_consistent.py and recal_consistent.py (refitted hold-out, H2, A7; logged retrospectively)
+2026-10-22 22:40:30 test labels read by score_ablation.py (descriptive score ablation)
+2026-10-22 22:53:29 test labels read by ridge_v.py (descriptive, post-hoc ridge + constraint stream)
+2026-10-23 test labels read by a7_point.py (F1 and AP of A7 for Table 10; logged retrospectively)
